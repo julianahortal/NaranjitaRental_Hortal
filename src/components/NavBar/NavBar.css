@@ -1,0 +1,27 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #F28705;
+    color: #F2F2F2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    
+}
+.menu .brand h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.link-pages{
+    display:flex;
+    list-style: none;
+    flex-direction: row;
+   
+}
+
+.link-pages li{
+    padding: 20px; 
+    
+}
