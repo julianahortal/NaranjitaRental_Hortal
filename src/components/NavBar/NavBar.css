@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color: #F28705;
+    background-color: #b18b5d;
     color: #F2F2F2;
     position: -webkit-sticky;
     position: sticky;
@@ -24,4 +24,12 @@
 .link-pages li{
     padding: 20px; 
     
+}
+
+.logo{
+ width: 8rem;
+ height: 8rem;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
 }

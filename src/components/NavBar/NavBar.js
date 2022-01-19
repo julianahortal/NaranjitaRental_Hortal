@@ -1,14 +1,13 @@
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
-
+import LogoNaranjita from '../../img/naranjitaRental.png'
 
 function NavBar() {
     return (
         <nav className='menu'>
             <navbrand className='brand'>
-                
-                <h1>NARANJITA RENTAL</h1>
+                <div style={{backgroundImage:`url(${LogoNaranjita})`}} className='logo'/>
             </navbrand>
 
             <ul className="link-pages">
