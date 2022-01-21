@@ -6,7 +6,8 @@ const ItemListContainer = (props) => {
         <div className="item">
             <h2>{props.articulo}</h2>
             <p>{props.precio}</p>
-            <ItemCount/>
+            <p>Stock disponible: {props.stock}</p>
+            <ItemCount stock={props.stock}/>
         </div>
     )
 }
