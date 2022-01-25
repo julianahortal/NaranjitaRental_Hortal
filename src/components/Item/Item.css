@@ -1,0 +1,13 @@
+.item-card {
+    border: 2px solid black;
+    width: 300px;
+}
+.img-container {
+      height: 50%;
+      overflow: hidden;
+}
+.img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+}
