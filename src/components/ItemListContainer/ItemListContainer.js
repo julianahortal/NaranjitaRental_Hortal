@@ -1,15 +1,14 @@
-import React from 'react'
-import ItemCount from '../ItemCount/ItemCount'
+import React, { useEffect } from 'react'
+import ItemList from '../ItemList/ItemList'
 
-const ItemListContainer = (props) => {
+const ItemListContainer = ({producto}) => {
+
     return (
         <div className="item">
-            <h2>{props.articulo}</h2>
-            <p>{props.precio}</p>
-            <p>Stock disponible: {props.stock}</p>
-            <ItemCount stock={props.stock}/>
+            <ItemList product={producto}/>
         </div>
     )
 }
 
 export default ItemListContainer
+
