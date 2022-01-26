@@ -1,213 +1,104 @@
 {
-  "catalogo": [
-    {
-        "id": "A0001",
-        "Cámaras": [
-            {"Sony": [
-                    {"id":"AA0001", "titulo": "Sony A7 3", "stock":2, "precio": 5990, "descripcion": "Camara Sony 4K – UHD A7iii (Full Frame – Super 35mm) + Cage SmallRig + Metabones Canon EF to E-mount (4K XAVC & S-Log3 Gamma 3840×2160 pixeles en formato XAVC-S 100mbs en modo 4K y 50mbs en 1080p) (Slow Motion 120fps en Full HD 1920×1080) Nuevo Sensor retroiluminado (BSI) CMOS Exmor R de 24mpx, Enfoque Rápido mejorado híbrido de 693 puntos de AF y 425 puntos de contraste, nuevo visor OLED Tru-Finder XGA mejorado con el factor de magnificación más alto que existe, un 0.78x., estabilizador de 5 ejes óptico, ISO hasta 204.800 y 10fps Shooting, WiFi, NFC, procesador de imagen BIONZ X – Conector USB-C / Doble Zocalo de tarjeta SDHC.", "img":"" },
-                    {"id":"AA0002", "titulo": "Sony A7 2", "stock": 3, "precio": 2950, "descripcion": "Cámara Sony Full Frame – Super 35mm. Slow Motion 120fps en Full HD 1920×1080) Nuevo Sensor retroiluminado (BSI) CMOS Exmor R de 12,2mpx, (3840 x 2160: 30 fps, 24 fps, 25 fps / 1920 x 1080: 60 fps, 30 fps, 24 fps, 50 fps, 25 fps / 1280 x 720: 120 fps, 100 fps) enfoque híbrido de 399 puntos de AF y 25 puntos de contraste, nuevo visor OLED Tru-Finder XGA mejorado con el factor de magnificación más alto que existe, un 0.78x., estabilizador de 5 ejes óptico, ISO hasta 409.600, WiFi, NFC, procesador de imagen BIONZ X.", "img" :"./img/Cámaras/Sony/sony-a7-3.jpg"}
-                ]
-            },
-            {"Canon": [
-                    {"id":"AB0001", "titulo":"Canon EOS 6D", "stock":5, "precio": 2960, "descripcion": "Cámara CANON EOS 6D FULL FRAME (KIT VIDEO) REFLEX DIGITAL 20,2mpx. Full Frame Sensor, Procesador DIGIC 5+ / WiFi / GPS incorporado para control de la camara con dispositivos Smart Phone y Tablets / LCD High Resolution 3.0″ Kit (Cuerpo+Lente+Shoulder+Boom+Tripode)", "img":"" },
-                    {"id":"AB0002", "titulo":"Canon EOS 5D MARK III", "stock":3, "precio": 2500, "descripcion": " Cámara CANON EOS 5D MARK III FULL FRAME 22,3mpx.AF en 61 puntos. Disparos continuos de 6 fps/ Sensibilidad ISO 100-25 600, ampliable a ISO 102 400. Vídeo Full HD / Procesador DIGIC 5+ de 14 bits/ Pantalla de 8,11 cm (3,2”) y 1 040 000 píxeles/ Modo HDR", "img":"" },
-                    {"id":"AB0003","titulo":"Canon EOS 80D", "stock":4, "precio": 1690, "descripcion": "Cámara CANON EOS 80D (KIT VIDEO) REFLEX DIGITAL 24,2mpx. Procesador DIGIC 5+ / (Graba video FULL HD hasta 1080p 60fps) – WiFi incorporado para control de la camara con dispositivos Smart Phone y Tablets / LCD Touch 3.2″ rebatible.", "img":"" }
-                ]
-            },
-            {"Nikon": [
-                    {"id":"AC0001", "titulo":"Nikon D7000", "stock":2, "precio": 1890, "descripcion": " ", "img":"" },
-                    {"id":"AC0002","titulo":"Nikon D5300", "stock":4, "precio": 900, "descripcion": " ", "img":"" }
-                ]
-            },
-            {"Go Pro": [
-                    {"id":"AD0001", "titulo":"GO PRO Session:", "stock":1, "precio": 990, "descripcion": " ", "img":"" },
-                    {"id":"AD0002", "titulo":"GO PRO HERO 8:","stock":3, "precio": 2500, "descripcion": " ", "img":"" }
-                ]
-            }
-        ]
-    },
-    {
-        "id": "A0002",
-        "Lentes": [
-            {"Montura EF (Canon) ": [
-                {"ROKINON CINE DS" :[ 
-                    {"id":"BA0001", "titulo": "ROKINON CINE DS. 8mm T3.8", "stock":2, "precio": 1150, "descripcion": " ", "img":""} ,
-                    {"id":"BA0002", "titulo": "ROKINON CINE DS. 16mm T2.2",  "stock":2, "precio": 1150, "descripcion": " ", "img":""} ,
-                    {"id":"BA0003", "titulo": "ROKINON CINE DS. 24mm T1.5",  "stock":2, "precio": 1150, "descripcion": " ", "img":""} ,
-                    {"id":"BA0004", "titulo": "ROKINON CINE DS. 50mm T1.5",  "stock":2, "precio": 1150, "descripcion": " ", "img":""} ,
-                    {"id":"BA0005", "titulo": "ROKINON CINE DS. 85mm T1.5",  "stock":2, "precio": 1150, "descripcion": " ", "img":""},
-                    {"id":"BA0006", "titulo": "ROKINON CINE DS valija x 4 lentes a elección",  "stock":2, "precio": 4250, "descripcion": " ", "img":""}
-                    ]
-                },
-                {"CANON KITs":[
-                    {"id":"BB0001","titulo": "YONGNUO 50mm f1.8", "stock":2, "precio": 990, "descripcion": " ", "img":""},
-                    {"id":"BB0002", "titulo": "CANON 24MM F2.8","stock":2, "precio": 650, "descripcion": " ", "img":""},
-                    {"id":"BB0003","titulo": "CANON 28MM F2.8", "stock":2, "precio": 650, "descripcion": " ", "img":""},
-                    {"id":"BB0004","titulo": "CANON 35MM F2", "stock":2, "precio": 650, "descripcion": " ", "img":""},
-                    {"id":"BB0005","titulo": "CANON 10-18mm f4.5-5.6", "stock":2, "precio": 790, "descripcion": " ", "img":""},
-                    {"id":"BB0006","titulo": "CANON 75-300mm f3.5-5.6", "stock":2, "precio": 990, "descripcion": " ", "img":""}
-                    ]
-                }
-                ]
-            },
-            {"Montura E (Sony)": [
-                {"id":"BC0001", "titulo":"SONY FE KIT 28-70 f3.5-5.6", "stock":2, "precio": 500, "descripcion": " ", "img":"" },
-                {"id":"BC0001","titulo":"SONY FE 28mm F2.0", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"BC0001", "titulo":"SONY FE 50mm F1.8","stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"BC0001", "titulo":"SONY FE 55-210 f5.5-6.3","stock":2, "precio": 990, "descripcion": " ", "img":"" }                
-                ]
-            },
-            {"Montura F (Nikon)": [
-                {"id":"BD0001","titulo":"NIKON NIKKOR AF 28mm f2.8", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"BD0002","titulo":"NIKON NIKKOR AF 50mm f1.4", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"BD0003", "titulo":"NIKON DX 35mm f1.8:","stock":2, "precio": 780, "descripcion": " ", "img":"" },
-                {"id":"BD0004", "titulo":"NIKON DX yongnuo 50mm f1.8","stock":2, "precio": 880, "descripcion": " ", "img":"" },
-                {"id":"BD0005", "titulo":"NIKON DX 85mm f1.8","stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"BD0006", "titulo":"NIKON DX 18-55mm VR f3.5-5.6","stock":2, "precio": 750, "descripcion": " ", "img":"" }     
-                ]
-            }
-        ]
-    },
-    {
-        "id":"A0003",
-        "Accesorios de cámara":[
-            {"Monitores y grabadores":[
-                {"id":"CA0001", "titulo":"Grabador ATOMOS NINJA 5” (HDMI)", "stock":2, "precio": 2800, "descripcion": "Incluye: 4 baterias NP-F750 5200mh, 1 cargador, 1 disco SSD 500gb 530MB/S, 1 cable HDMI-Micro HDMI 2.0, 1 lector 3.0, 1 fuente 220v", "img":" " },
-                {"id":"CA0002", "titulo":"Monitor ATOMOS SHINOBI 5.2” (HDMI IN)", "stock":2, "precio": 1200, "descripcion": " ", "img":"" },
-                {"id":"CA0003", "titulo":"Monitor TV-LOGIC VFM-055A 5.5” OLED (HDMI IN/OUT - SDI IN/OUT)", "stock":2, "precio": 1400, "descripcion": " ", "img":"" },
-                {"id":"CA0004", "titulo":"Monitor on board Lilliput 7” A7S-7 1080p (HDMI IN/OUT)", "stock":2, "precio": 1390, "descripcion": " ", "img":"" },
-                {"id":"CA0005", "titulo":"Monitor on Board Lilliput 7” H7S 4K ULTRA BRIGHT 4K (HDMI IN/OUT - SDI IN/OUT)" , "stock":2, "precio": 1690, "descripcion": " ", "img":"" }
-                ]
-            },
-            {"Follow Focus":[
-                {"id":"CB0001", "titulo":"FOLLOW FOCUS ZHIYUN PARA CRANE 2", "stock":2, "precio": 990, "descripcion": "Incluye: 2x lens gear, 1 rodpampa", "img":"" },
-                {"id":"CB0002", "titulo":"FOLLOW FOCUS IKAN ELE-FGK", "stock":2, "precio": 780, "descripcion": "Incluye: Bridgeplate, para rods 15mm, extension flexible, crank handle, 2x lens gears", "img":"" },
-                {"id":"CB0003", "titulo":"FOLLOW FOCUS PARA DSLR” (HDMI IN)" , "stock":2, "precio": 780, "descripcion": "Incluye: Bridgeplate, para rods 15mm, extension flexible, crank handle, 2x lens gears.", "img":"" }              
-                ]
-            },
-            {"Filtros":[
-                {"id":"CC0001", "titulo":"FILTRO Polarizador 4x4 CAVISION","stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"CC0002", "titulo":"FILTRO Polarizador 4x4 TIFFEN", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"CC0003", "titulo":"FILTRO ND 0.3 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"CC0004", "titulo":"FILTRO ND 0.6 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"CC0005", "titulo":"FILTRO ND 0.9 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"CC0006", "titulo":"FILTRO ND DEGRAD 0.3 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"CC0007", "titulo":"FILTRO ND DEGRAD 0.6 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"" },
-                {"id":"CC0008", "titulo":"FILTRO ND DEGRAD 0.9 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"" }
-                ]
-            }
-        ]
-      },
-      {
-        "id": "A0004",
-        "Tripodes y estabilizadores": [
-            {"Estabilizadores":[
-                {"id":"DA0001", "titulo":"GIMBAL ZHIYUN CRANE 2. HASTA 3.2KG","stock":2, "precio": 3490, "descripcion": " ", "img":"" },
-                {"id":"DA0002", "titulo":"GIMBAL ZHIYUN CRANE 2S. HASTA 4.5KG","stock":2, "precio": 3790, "descripcion": " ", "img":"" },
-                {"id":"DA0003", "titulo":"GIMBAL RONIN-S HASTA 3.6KG","stock":2, "precio": 3750, "descripcion": " ", "img":"" },
-                {"id":"DA0004", "titulo":"ESTABILIZADOR MECÁNICO GLIDECAM XR-1000 PARA DSLR","stock":2, "precio": 650, "descripcion": " ", "img":"" },
-                {"id":"DA0005", "titulo":"SHOULDER SIRUI VSK-5 (P/DSLR)","stock":2, "precio": 550, "descripcion": " ", "img":"" },
-                {"id":"DA0006", "titulo":"SHOULDER PROAIM (P/DSRL y mayor peso)","stock":2, "precio": 550, "descripcion": " ", "img":"" }
-                ]
-            },
-            {"Trípodes":[
-                {"id":"DB0001", "titulo":"TRIPODE WEIFENG W717 de cabezal fluido. 1,80mts de altura, hasta 5kg", "stock":2, "precio": 390, "descripcion": " ", "img":"" },
-                {"id":"DB0002", "titulo":"TRÍPODE BENRO KH25N de cabezal fluido. 1,50mts de altura, hasta 5KG", "stock":2, "precio": 390, "descripcion": " ", "img":"" },
-                {"id":"DB0003", "titulo":"TRIPODE MANFROTTO 525 + CABEZAL MANFROTTO 504 1,5m de altura, hasta 15kg", "stock":2, "precio": 550, "descripcion": " ", "img":"" }
+"catalogo": [   {"id":"AA0001", "tipo": "camara", "marca":"sony", "titulo": "Sony A7 3", "stock":2, "precio": 5990, "descripcion": "Camara Sony 4K – UHD A7iii (Full Frame – Super 35mm) + Cage SmallRig + Metabones Canon EF to E-mount (4K XAVC & S-Log3 Gamma 3840×2160 pixeles en formato XAVC-S 100mbs en modo 4K y 50mbs en 1080p) (Slow Motion 120fps en Full HD 1920×1080) Nuevo Sensor retroiluminado (BSI) CMOS Exmor R de 24mpx, Enfoque Rápido mejorado híbrido de 693 puntos de AF y 425 puntos de contraste, nuevo visor OLED Tru-Finder XGA mejorado con el factor de magnificación más alto que existe, un 0.78x., estabilizador de 5 ejes óptico, ISO hasta 204.800 y 10fps Shooting, WiFi, NFC, procesador de imagen BIONZ X – Conector USB-C / Doble Zocalo de tarjeta SDHC.", "img":"https://i.postimg.cc/7Z4Tkhp4/sony-a7-3.jpg" },
+                {"id":"AA0002", "tipo": "camara", "marca":"sony", "titulo": "Sony A7s 2", "stock": 3, "precio": 2950, "descripcion": "Cámara Sony Full Frame – Super 35mm. Slow Motion 120fps en Full HD 1920×1080) Nuevo Sensor retroiluminado (BSI) CMOS Exmor R de 12,2mpx, (3840 x 2160: 30 fps, 24 fps, 25 fps / 1920 x 1080: 60 fps, 30 fps, 24 fps, 50 fps, 25 fps / 1280 x 720: 120 fps, 100 fps) enfoque híbrido de 399 puntos de AF y 25 puntos de contraste, nuevo visor OLED Tru-Finder XGA mejorado con el factor de magnificación más alto que existe, un 0.78x., estabilizador de 5 ejes óptico, ISO hasta 409.600, WiFi, NFC, procesador de imagen BIONZ X.", "img" :"https://i.postimg.cc/vZDwDtRt/sony-a7s-ii-video-1.jpg"},
+                {"id":"AB0001", "tipo": "camara", "marca":"canon", "titulo":"Canon EOS 6D", "stock":5, "precio": 2960, "descripcion": "Cámara CANON EOS 6D FULL FRAME (KIT VIDEO) REFLEX DIGITAL 20,2mpx. Full Frame Sensor, Procesador DIGIC 5+ / WiFi / GPS incorporado para control de la camara con dispositivos Smart Phone y Tablets / LCD High Resolution 3.0″", "img":"https://i.postimg.cc/sg31L8hD/canon-6d-video.jpg" },
+                {"id":"AB0002", "tipo": "camara", "marca":"canon", "titulo":"Canon EOS 5D MARK IV", "stock":3, "precio": 2500, "descripcion": " Cámara CANON EOS 5D MARK III FULL FRAME 22,3mpx.AF en 61 puntos. Disparos continuos de 6 fps/ Sensibilidad ISO 100-25 600, ampliable a ISO 102 400. Vídeo Full HD / Procesador DIGIC 5+ de 14 bits/ Pantalla de 8,11 cm (3,2”) y 1 040 000 píxeles/ Modo HDR", "img":"https://i.postimg.cc/L4Ts1DWc/canon-eos-5d-mark-iv.jpg" },
+                {"id":"AB0003", "tipo": "camara", "marca":"canon", "titulo":"Canon EOS 80D", "stock":4, "precio": 1690, "descripcion": "Cámara CANON EOS 80D (KIT VIDEO) REFLEX DIGITAL 24,2mpx. Procesador DIGIC 5+ / (Graba video FULL HD hasta 1080p 60fps) – WiFi incorporado para control de la camara con dispositivos Smart Phone y Tablets / LCD Touch 3.2″ rebatible.", "img":"https://i.postimg.cc/t4D7G53d/canon-80d-video.jpg" },
+                {"id":"AC0001", "tipo": "camara", "marca":"nikon", "titulo":"Nikon D7000", "stock":2, "precio": 1890, "descripcion": " ", "img":"https://i.postimg.cc/3rnKRR47/Nikon-25474-D7000.jpg" },
+                {"id":"AC0002", "tipo": "camara", "marca":"nikon","titulo":"Nikon D5300", "stock":4, "precio": 900, "descripcion": " ", "img":"https://i.postimg.cc/wvqC8XkN/Nikon-D5300.jpg" },
+                {"id":"AD0001", "tipo": "camara", "marca":"go-pro", "titulo":"GoPro MAX 360 5.6K", "stock":1, "precio": 990, "descripcion": " ", "img":"https://i.postimg.cc/4yGDdhcv/Go-Pro-MAX-360.jpg" },
+                {"id":"AD0002", "tipo": "camara", "marca":"go-pro", "titulo":"GO PRO HERO 8:","stock":3, "precio": 2500, "descripcion": " ", "img":"https://i.postimg.cc/Px1GTMCr/Go-Pro-Hero8.jpg" },
+                {"id":"BA0001", "tipo": "lente", "marca":"rokinon", "titulo": "ROKINON CINE DS. 16mm T2.6",  "stock":2, "precio": 1150, "descripcion": " ", "img":"https://i.postimg.cc/RZqK8sYf/rokinon-wide-angle-16mm-t26-cine-ds-lens-cine-3.jpg"} ,
+                {"id":"BA0002", "tipo": "lente", "marca":"rokinon", "titulo": "ROKINON CINE DS. 24mm T1.5",  "stock":2, "precio": 1150, "descripcion": " ", "img":"https://i.postimg.cc/vmV981bZ/rokinon-wide-angle-24mm-t15-cine-ds-lens-cine-3.jpg"} ,
+                {"id":"BA0003", "tipo": "lente", "marca":"rokinon", "titulo": "ROKINON CINE DS. 35mm T1.5",  "stock":2, "precio": 1150, "descripcion": " ", "img":"https://i.postimg.cc/zBYhyJGS/rokinon-wide-angle-35mm-t15-cine-ds-lens-cine-3.jpg"} ,
+                {"id":"BA0004", "tipo": "lente", "marca":"rokinon", "titulo": "ROKINON CINE DS. 50mm T1.5",  "stock":2, "precio": 1150, "descripcion": " ", "img":"https://i.postimg.cc/xT6L6D6n/rokinon-normal-50mm-t15-cine-ds-lens-cine-3.jpg"} ,
+                {"id":"BA0005", "tipo": "lente", "marca":"rokinon", "titulo": "ROKINON CINE DS. 85mm T1.5",  "stock":2, "precio": 1150, "descripcion": " ", "img":"https://i.postimg.cc/P5cYkbG7/rokinon-short-tele-85mm-t15-cine-ds-lens-cine-3.jpg"},
+                {"id":"BA0006", "tipo": "lente", "marca":"rokinon", "titulo": "ROKINON CINE DS valija x 4 lentes a elección",  "stock":2, "precio": 4250, "descripcion": " ", "img":"https://i.postimg.cc/KvGn7vr0/rokinon-cine-ds-valija.jpg"},
+                {"id":"BB0001", "tipo": "lente", "marca": "canon", "titulo": "YONGNUO 50mm f1.8", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1"},
+                {"id":"BB0002", "tipo": "lente", "marca": "canon", "titulo": "CANON 24MM F2.8","stock":2, "precio": 650, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=2"},
+                {"id":"BB0003", "tipo": "lente", "marca": "canon", "titulo": "CANON 28MM F2.8", "stock":2, "precio": 650, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=3"},
+                {"id":"BB0004", "tipo": "lente", "marca": "canon", "titulo": "CANON 35MM F2", "stock":2, "precio": 650, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=4"},
+                {"id":"BB0005", "tipo": "lente", "marca": "canon", "titulo": "CANON 10-18mm f4.5-5.6", "stock":2, "precio": 790, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=5"},
+                {"id":"BB0006", "tipo": "lente", "marca": "canon", "titulo": "CANON 75-300mm f3.5-5.6", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1"},
+                {"id":"BC0001", "tipo": "lente", "marca": "sony", "titulo":"SONY FE KIT 28-70 f3.5-5.6", "stock":2, "precio": 500, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"BC0001", "tipo": "lente", "marca": "sony", "titulo":"SONY FE 28mm F2.0", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"BC0001", "tipo": "lente", "marca": "sony", "titulo":"SONY FE 50mm F1.8","stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"BC0001", "tipo": "lente", "marca": "sony", "titulo":"SONY FE 55-210 f5.5-6.3","stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },                
+                {"id":"BD0001", "tipo": "lente", "marca": "nikon", "titulo":"NIKON NIKKOR AF 28mm f2.8", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"BD0002", "tipo": "lente", "marca": "nikon", "titulo":"NIKON NIKKOR AF 50mm f1.4", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"BD0003", "tipo": "lente", "marca": "nikon", "titulo":"NIKON DX 35mm f1.8:","stock":2, "precio": 780, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"BD0004", "tipo": "lente", "marca": "nikon", "titulo":"NIKON DX yongnuo 50mm f1.8","stock":2, "precio": 880, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"BD0005", "tipo": "lente", "marca": "nikon", "titulo":"NIKON DX 85mm f1.8","stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"BD0006", "tipo": "lente", "marca": "nikon", "titulo":"NIKON DX 18-55mm VR f3.5-5.6","stock":2, "precio": 750, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CA0001", "tipo": "monitores-grabadores", "marca": "atomos", "titulo":"Grabador ATOMOS NINJA 5” (HDMI)", "stock":2, "precio": 2800, "descripcion": "Incluye: 4 baterias NP-F750 5200mh, 1 cargador, 1 disco SSD 500gb 530MB/S, 1 cable HDMI-Micro HDMI 2.0, 1 lector 3.0, 1 fuente 220v", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CA0002", "tipo": "monitores-grabadores", "marca": "atomos", "titulo":"Monitor ATOMOS SHINOBI 5.2” (HDMI IN)", "stock":2, "precio": 1200, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CA0003", "tipo": "monitores-grabadores", "marca": "tv-logic", "titulo":"Monitor TV-LOGIC VFM-055A 5.5” OLED (HDMI IN/OUT - SDI IN/OUT)", "stock":2, "precio": 1400, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CA0004", "tipo": "monitores-grabadores", "marca": "lilliput", "titulo":"Monitor on board Lilliput 7” A7S-7 1080p (HDMI IN/OUT)", "stock":2, "precio": 1390, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CA0005", "tipo": "monitores-grabadores", "marca": "lilliput", "titulo":"Monitor on Board Lilliput 7” H7S 4K ULTRA BRIGHT 4K (HDMI IN/OUT - SDI IN/OUT)" , "stock":2, "precio": 1690, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CB0001", "tipo": "follow-focus", "marca": "zhiyun-crane","titulo":"FOLLOW FOCUS ZHIYUN PARA CRANE 2", "stock":2, "precio": 990, "descripcion": "Incluye: 2x lens gear, 1 rodpampa", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CB0002", "tipo": "follow-focus", "marca": "ikan","titulo":"FOLLOW FOCUS IKAN ELE-FGK", "stock":2, "precio": 780, "descripcion": "Incluye: Bridgeplate, para rods 15mm, extension flexible, crank handle, 2x lens gears", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CB0003", "tipo": "follow-focus", "marca": null,"titulo":"FOLLOW FOCUS PARA DSLR” (HDMI IN)" , "stock":2, "precio": 780, "descripcion": "Incluye: Bridgeplate, para rods 15mm, extension flexible, crank handle, 2x lens gears.", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CC0001", "tipo": "filtro-lente", "marca": "cavision","titulo":"FILTRO Polarizador 4x4 CAVISION","stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CC0002", "tipo": "filtro-lente", "marca": "tiffen", "titulo":"FILTRO Polarizador 4x4 TIFFEN", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CC0003", "tipo": "filtro-lente", "marca": "cavision", "titulo":"FILTRO ND 0.3 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CC0004", "tipo": "filtro-lente", "marca": "cavision", "titulo":"FILTRO ND 0.6 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CC0005", "tipo": "filtro-lente", "marca": "cavision", "titulo":"FILTRO ND 0.9 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CC0006", "tipo": "filtro-lente", "marca": "cavision", "titulo":"FILTRO ND DEGRAD 0.3 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CC0007", "tipo": "filtro-lente", "marca": "cavision", "titulo":"FILTRO ND DEGRAD 0.6 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"CC0008", "tipo": "filtro-lente", "marca": "cavision", "titulo":"FILTRO ND DEGRAD 0.9 4x4 CAVISION", "stock":2, "precio": 990, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },                
+                {"id":"DA0001", "tipo": "estabilizador", "marca": "zhiyun-crane", "titulo":"GIMBAL ZHIYUN CRANE 2. HASTA 3.2KG","stock":2, "precio": 3490, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"DA0002", "tipo": "estabilizador", "marca": "zhiyun-crane", "titulo":"GIMBAL ZHIYUN CRANE 2S. HASTA 4.5KG","stock":2, "precio": 3790, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"DA0003", "tipo": "estabilizador", "marca": "ronin", "titulo":"GIMBAL RONIN-S HASTA 3.6KG","stock":2, "precio": 3750, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"DA0004", "tipo": "estabilizador", "marca": "glidecam", "titulo":"ESTABILIZADOR MECÁNICO GLIDECAM XR-1000 PARA DSLR","stock":2, "precio": 650, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"DA0005", "tipo": "estabilizador", "marca": "sirui", "titulo":"SHOULDER SIRUI VSK-5 (P/DSLR)","stock":2, "precio": 550, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"DA0006", "tipo": "estabilizador", "marca": "proaim","titulo":"SHOULDER PROAIM (P/DSRL y mayor peso)","stock":2, "precio": 550, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"DB0001", "tipo": "tripode", "marca": "weifeng","titulo":"TRIPODE WEIFENG W717 de cabezal fluido. 1,80mts de altura, hasta 5kg", "stock":2, "precio": 390, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"DB0002", "tipo": "estabilizador", "marca": "benro","titulo":"TRÍPODE BENRO KH25N de cabezal fluido. 1,50mts de altura, hasta 5KG", "stock":2, "precio": 390, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"DB0003", "tipo": "estabilizador", "marca": "manfrotto", "titulo":"TRIPODE MANFROTTO 525 + CABEZAL MANFROTTO 504 1,5m de altura, hasta 15kg", "stock":2, "precio": 550, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EA0001", "tipo": "luz-fresnel", "marca": null, "titulo":"Fresnel 2000w", "stock":2, "precio": 1200, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EA0002", "tipo": "luz-fresnel", "marca": null,"titulo": "Fresnel 1000w", "stock":2, "precio": 1000, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EA0003", "tipo": "luz-fresnel", "marca": null,"titulo": "Fresnel 650w", "stock":2, "precio": 750, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EA0004", "tipo": "luz-fresnel", "marca": null,"titulo": "Fresnel 300w", "stock":2, "precio": 750, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EB0001", "tipo": "luz-fresnel-led", "marca": "dexel", "titulo":"FRESNEL LED DEXEL 500w (BICOLOR) con dimmer", "stock":2, "precio": 1950, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EB0002", "tipo": "luz-fresnel-led", "marca": "dexel", "titulo":"FRESNEL LED RGB+bicolor DEXEL 250w con dimmer" , "stock":2, "precio": 2890, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EB0003", "tipo": "luz-fresnel-led", "marca": "dexel", "titulo":"FRESNEL LED DEXEL 400w (BICOLOR) con dimmer", "stock":2, "precio": 1450, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EB0004", "tipo": "luz-fresnel-led", "marca": "dexel", "titulo":"FRESNEL LED DEXEL 200w (BICOLOR) con dimmer", "stock":2, "precio": 1150, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EB0005", "tipo": "luz-fresnel-led", "marca": "dexel", "titulo":"FRESNEL LED DEXEL 120w (BICOLOR) con dimmer", "stock":2, "precio": 750, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EC0001", "tipo": "luz-softlight", "marca": null, "titulo":"SOFTLIGHT 2500w", "stock":2, "precio": 450, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EC0002", "tipo": "luz-softlight", "marca": null, "titulo":"SOFTLIGHT 1250w", "stock":2, "precio": 450, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EC0003", "tipo": "luz-ultralight", "marca": "dexel","titulo":"ULTRALIGHT DEXEL 1000w", "stock":2, "precio": 450, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EC0004", "tipo": "luz-ultralight", "marca": "dexel", "titulo":"ULTRALIGHT DEXEL 2000w", "stock":2, "precio": 550, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EC0005", "tipo": "luz-minibrut", "marca": "ampro","titulo":"MINIBRUT DE 4x650w PAR 2600W AMPRO", "stock":2, "precio": 550, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },                
+                {"id":"ED0001", "tipo": "luz-pampa", "marca": "obarrio", "titulo":"PAMPA OBARRIO 6 x 35w (Luz fría)", "stock":2, "precio": 1050, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"ED0002", "tipo": "luz-pampa", "marca": "obarrio", "titulo":"PAMPA OBARRIO 4 x 55w (Luz fría y cálida)" , "stock":2, "precio": 950, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"ED0003", "tipo": "luz-pampa", "marca": "obarrio",  "titulo":"PAMPA OBARRIO 2 x 55w (Luz fría y cálida)", "stock":2, "precio": 690, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },                
+                {"id":"EE0001", "tipo": "alargue", "marca": null, "titulo":"ALARGUES 10amp", "stock":2, "precio": 60, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EE0002", "tipo": "alargue", "marca":  null, "titulo":"ZAPATILLAS 10amp", "stock":2, "precio": 60, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EE0003", "tipo": "tripode-luz", "marca": "avenger", "titulo":"TRIPODE AVENGER A120", "stock":5, "precio": 390, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },  
+                {"id":"EE0004", "tipo": "tripode-luz", "marca": "manfrotto","titulo":"TRIPODE MANFROTTO 008csu", "stock":2, "precio": 230, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EE0005", "tipo": "tripode-luz", "marca": "dexel", "titulo":"TRIPODE DEXEL 45-25/45-20", "stock":2, "precio": 230, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EE0006", "tipo": "dimmer", "marca": null,"titulo":"DIMMER 1000w/1500w", "stock":2, "precio": 220, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EE0007", "tipo": "dimmer", "marca": null,"titulo":"DIMMER 2500w" , "stock":2, "precio": 220, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },  
+                {"id":"EF0001", "tipo": "griperia", "marca": null, "titulo":"BANDERA 1x1mt", "stock":2, "precio": 350, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EF0002", "tipo": "griperia", "marca": null, "titulo":"BANDERA 60x60cm", "stock":2, "precio": 350, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EF0003", "tipo": "griperia", "marca": null, "titulo":"BANDERA 60x90cm", "stock":2, "precio": 350, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },  
+                {"id":"EF0004", "tipo": "griperia", "marca": null, "titulo":"BOLSAS DE ARENA 7KG", "stock":2, "precio": 35, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EF0005", "tipo": "griperia", "marca": null, "titulo":"TELA NEGRA/BLANCA/SILK (2x2/3x2)", "stock":2, "precio": 350, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"EF0006", "tipo": "griperia", "marca": null, "titulo":"TELA NEGRA/BLANCA/SILK (4x4)" , "stock":2, "precio": 450, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FA0001", "tipo": "microfono-boom", "marca": "rode", "titulo":"Microfono Boom RODE NTG2/NTG4 Completo (caña, cable XLR)", "stock":2, "precio": 1090, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FA0002", "tipo": "microfono-boom", "marca": "sennheiser", "titulo":"Microfono Boom SENNHEISER MKH-416 Completo (caña, cable XLR)", "stock":2, "precio": 1400, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FA0003", "tipo": "microfono-boom", "marca": "sennheiser","titulo":"Micrófono Boom SENNHEISER K6+ME66/67 Completo (caña, cable XLR)", "stock":2, "precio": 1100, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FA0004", "tipo": "microfono-corbatero", "marca": "boya","titulo":"Microfono corbatero inalambrico BOYA WM8 PRO K1" , "stock":2, "precio": 490, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FA0005", "tipo": "microfono-corbatero", "marca": "sennheiser", "titulo":"Microfono corbatero inalambrico SENNHEISER G2/G3/G4" , "stock":2, "precio": 850, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },                
+                {"id":"FB0001", "tipo": "grabadora", "marca": "zoom", "titulo":"Grabadora portátil ZOOM H5 (dos entradas XLR)", "stock":2, "precio": 850, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FB0002", "tipo": "grabadora", "marca": "zoom", "titulo":"Grabadora portátil ZOOM H6 (cuatro entradas XLR)", "stock":2, "precio": 1370, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FB0003", "tipo": "grabadora", "marca": "zoom", "titulo":"Grabadora portátil ZOOM H8 (seis entradas XLR)", "stock":2, "precio": 1690, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FB0004", "tipo": "grabadora", "marca": "tascam", "titulo":"Tascam DR40 (dos entradas XLR)", "stock":2, "precio": 490, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FC0001", "tipo": "accesorios-sonido", "marca": "panasonic", "titulo":"Auriculares PANASONIC RP-HT 161", "stock":2, "precio": 80, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FC0002", "tipo": "accesorios-sonido", "marca": "sennheiser", "titulo":"Microfono dinamico SENNHEISER E815S", "stock":2, "precio": 390, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"FC0003", "tipo": "accesorios-sonido", "marca": null, "titulo":"Zeppelin con peludo", "stock":2, "precio": 490, "descripcion": " ", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"GA0001", "tipo": "combo", "marca": null, "titulo":"Combo Pomelo (ILUMINACION LED)", "stock":2, "precio": 2490, "descripcion": "2 fresnel LED 200w, 1 fresnel de 120w, 1 fresnel 90w", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"GA0002",  "tipo": "combo", "marca": null, "titulo":"Combo Mandarina (SONIDO BÁSICO)", "stock":2, "precio": 1790, "descripcion": "Grabadora DR40/H6/H5, Boom NTG2/4/BOYA/SENNHEISER, caña, cable xlr, Auriculares Panasonic RP-HT 161", "img":"https://source.unsplash.com/random/800x800/?img=1" },
+                {"id":"GA0003", "tipo": "combo", "marca": null, "titulo":"Combo Naranjita (SONIDO MEDIO)", "stock":2, "precio": 2990, "descripcion": "Grabadora Zoom H6/H8, Rode NTG2/4/BOYA/SENNHEISER, caña, XLR, Auriculares Panasonic RP-HT 161, dos corbateros Boya/Sennheiser G3/G4", "img":"https://source.unsplash.com/random/800x800/?img=1" }
             ]
-            }
-        ]
-    },
-    {
-        "id": "A0005",
-        "Iluminación":[
-            {"Luces":[
-                    {"Fresnel":[
-                        {"id":"EA0001", "titulo":"Fresnel 2000w", "stock":2, "precio": 1200, "descripcion": " ", "img":"" },
-                        {"id":"EA0002","titulo": "Fresnel 1000w", "stock":2, "precio": 1000, "descripcion": " ", "img":"" },
-                        {"id":"EA0003","titulo": "Fresnel 650w", "stock":2, "precio": 750, "descripcion": " ", "img":"" },
-                        {"id":"EA0004","titulo": "Fresnel 300w", "stock":2, "precio": 750, "descripcion": " ", "img":"" }
-                        ]
-                    },
-                    {"Fresnel LED":[
-                        {"id":"EB0001","titulo":"FRESNEL LED DEXEL 500w (BICOLOR) con dimmer", "stock":2, "precio": 1950, "descripcion": " ", "img":"" },
-                        {"id":"EB0002","titulo":"FRESNEL LED RGB+bicolor DEXEL 250w con dimmer" , "stock":2, "precio": 2890, "descripcion": " ", "img":"" },
-                        {"id":"EB0003","titulo":"FRESNEL LED DEXEL 400w (BICOLOR) con dimmer", "stock":2, "precio": 1450, "descripcion": " ", "img":"" },
-                        {"id":"EB0004","titulo":"FRESNEL LED DEXEL 200w (BICOLOR) con dimmer", "stock":2, "precio": 1150, "descripcion": " ", "img":"" },
-                        {"id":"EB0005","titulo":"FRESNEL LED DEXEL 120w (BICOLOR) con dimmer", "stock":2, "precio": 750, "descripcion": " ", "img":"" }
-                        ]
-                    },
-                    {"Tungsteno":[
-                        {"id":"EC0001","titulo":"SOFTLIGHT 2500w", "stock":2, "precio": 450, "descripcion": " ", "img":"" },
-                        {"id":"EC0002","titulo":"SOFTLIGHT 1250w", "stock":2, "precio": 450, "descripcion": " ", "img":"" },
-                        {"id":"EC0003","titulo":"ULTRALIGHT DEXEL 1000w", "stock":2, "precio": 450, "descripcion": " ", "img":"" },
-                        {"id":"EC0004","titulo":"ULTRALIGHT DEXEL 2000w", "stock":2, "precio": 550, "descripcion": " ", "img":"" },
-                        {"id":"EC0005","titulo":"MINIBRUT DE 4x650w PAR 2600W AMPRO", "stock":2, "precio": 550, "descripcion": " ", "img":"" }                
-                        ]
-                    },
-                    {"Fluorescente":[
-                        {"id":"ED0001","titulo":"PAMPA OBARRIO 6 x 35w (Luz fría)", "stock":2, "precio": 1050, "descripcion": " ", "img":"" },
-                        {"id":"ED0002","titulo":"PAMPA OBARRIO 4 x 55w (Luz fría y cálida)" , "stock":2, "precio": 950, "descripcion": " ", "img":"" },
-                        {"id":"ED0003","titulo":"PAMPA OBARRIO 2 x 55w (Luz fría y cálida)", "stock":2, "precio": 690, "descripcion": " ", "img":"" }                
-                        ]
-                    }
-                ]
-            },
-            {"Trípodes y extras":[
-                    {"id":"EE0001","titulo":"ALARGUES 10amp", "stock":2, "precio": 60, "descripcion": " ", "img":"" },
-                    {"id":"EE0002", "titulo":"ZAPATILLAS 10amp", "stock":2, "precio": 60, "descripcion": " ", "img":"" },
-                    {"id":"EE0003", "titulo":"TRIPODE AVENGER A120", "stock":2, "precio": 390, "descripcion": " ", "img":"" },  
-                    {"id":"EE0004", "titulo":"TRIPODE MANFROTTO 008csu", "stock":2, "precio": 230, "descripcion": " ", "img":"" },
-                    {"id":"EE0005", "titulo":"TRIPODE DEXEL 45-25/45-20", "stock":2, "precio": 230, "descripcion": " ", "img":"" },
-                    {"id":"EE0006", "titulo":"DIMMER 1000w/1500w", "stock":2, "precio": 220, "descripcion": " ", "img":"" },
-                    {"id":"EE0007", "titulo":"DIMMER 2500w" , "stock":2, "precio": 220, "descripcion": " ", "img":"" }  
-                ]
-            },
-            {"Griperia":[
-                    {"id":"EF0001", "titulo":"BANDERA 1x1mt", "stock":2, "precio": 350, "descripcion": " ", "img":"" },
-                    {"id":"EF0002", "titulo":"BANDERA 60x60cm", "stock":2, "precio": 350, "descripcion": " ", "img":"" },
-                    {"id":"EF0003", "titulo":"BANDERA 60x90cm", "stock":2, "precio": 350, "descripcion": " ", "img":"" },  
-                    {"id":"EF0004", "titulo":"BOLSAS DE ARENA 7KG", "stock":2, "precio": 35, "descripcion": " ", "img":"" },
-                    {"id":"EF0005", "titulo":"TELA NEGRA/BLANCA/SILK (2x2/3x2)", "stock":2, "precio": 350, "descripcion": " ", "img":"" },
-                    {"id":"EF0006", "titulo":"TELA NEGRA/BLANCA/SILK (4x4)" , "stock":2, "precio": 450, "descripcion": " ", "img":"" }
-                ]
-            
-            }
-        ]
-    },
-    {
-        "id": "A0006",
-        "Sonido" : [
-            {"Micrófonos":[
-                {"id":"FA0001", "titulo":"Microfono Boom RODE NTG2/NTG4 Completo (caña, cable XLR)", "stock":2, "precio": 1090, "descripcion": " ", "img":"" },
-                {"id":"FA0002", "titulo":"Microfono Boom SENNHEISER MKH-416 Completo (caña, cable XLR)", "stock":2, "precio": 1400, "descripcion": " ", "img":"" },
-                {"id":"FA0003", "titulo":"Micrófono Boom SENNHEISER K6+ME66/67 Completo (caña, cable XLR)", "stock":2, "precio": 1100, "descripcion": " ", "img":"" },
-                {"id":"FA0004", "titulo":"Microfono corbatero inalambrico BOYA WM8 PRO K1" , "stock":2, "precio": 490, "descripcion": " ", "img":"" },
-                {"id":"FA0005", "titulo":"Microfono corbatero inalambrico SENNHEISER G2/G3/G4" , "stock":2, "precio": 850, "descripcion": " ", "img":"" }                
-                ]
-            },
-            {"Grabadoras":[
-                {"id":"FB0001", "titulo":"Grabadora portátil ZOOM H5 (dos entradas XLR)", "stock":2, "precio": 850, "descripcion": " ", "img":"" },
-                {"id":"FB0002", "titulo":"Grabadora portátil ZOOM H6 (cuatro entradas XLR)", "stock":2, "precio": 1370, "descripcion": " ", "img":"" },
-                {"id":"FB0003", "titulo":"Grabadora portátil ZOOM H8 (seis entradas XLR)", "stock":2, "precio": 1690, "descripcion": " ", "img":"" },
-                {"id":"FB0004", "titulo":"Tascam DR40 (dos entradas XLR)", "stock":2, "precio": 490, "descripcion": " ", "img":"" }
-                ]
-            },
-            {"Accesorios": [
-                {"id":"FC0001", "titulo":"Auriculares PANASONIC RP-HT 161", "stock":2, "precio": 80, "descripcion": " ", "img":"" },
-                {"id":"FC0002", "titulo":"Microfono dinamico SENNHEND ISER E815S", "stock":2, "precio": 390, "descripcion": " ", "img":"" },
-                {"id":"FC0003", "titulo":"Zeppelin con peludo", "stock":2, "precio": 490, "descripcion": " ", "img":"" }
-                ]
-            }
-        ]
-    },
-    {
-        "id": "A0007",
-        "combos":[
-            {"id":"GA0001", "titulo":"Combo Pomelo (ILUMINACION LED)", "stock":2, "precio": 2490, "descripcion": "2 fresnel LED 200w, 1 fresnel de 120w, 1 fresnel 90w", "img":"" },
-            {"id":"GA0002", "titulo":"Combo Mandarina (SONIDO BÁSICO)", "stock":2, "precio": 1790, "descripcion": "Grabadora DR40/H6/H5, Boom NTG2/4/BOYA/SENNHEISER, caña, cable xlr, Auriculares Panasonic RP-HT 161", "img":"" },
-            {"id":"GA0003", "titulo":"Combo Naranjita (SONIDO MEDIO)", "stock":2, "precio": 2990, "descripcion": "Grabadora Zoom H6/H8, Rode NTG2/4/BOYA/SENNHEISER, caña, XLR, Auriculares Panasonic RP-HT 161, dos corbateros Boya/Sennheiser G3/G4", "img":"" }
-        ]
-      }
-  ]
 }
