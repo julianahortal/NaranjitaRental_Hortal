@@ -2,6 +2,7 @@ import React from 'react'
 import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
 import LogoNaranjita from '../../img/naranjitaRental.png'
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
@@ -11,10 +12,10 @@ function NavBar() {
             </navbrand>
 
             <ul className="link-pages">
-                <li>INICIO</li>
-                <li>ALQUILER DE EQUIPOS</li>
-                <li>NOSOTROS</li>
-                <li>REQUISITOS</li>
+                <li><Link to='/'>INICIO</Link></li>
+                <li><Link to='/alquiler-de-equipos'>ALQUILER DE EQUIPOS</Link></li>
+                <li><Link to='/nosotros'>NOSOTROS</Link></li>
+                <li><Link to='/requisitos'>REQUISITOS</Link></li>                
             </ul>
             <CartWidget />
         </nav>
