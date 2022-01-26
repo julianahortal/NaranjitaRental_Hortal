@@ -1,7 +1,10 @@
 import {useEffect, useState} from 'react';
-import Item from "../Item";
+import Item from "../Item/Item";
+import './ItemList.css';
 
-const ItemList = ({producto}) => {
+
+
+const ItemList = () => {
 
   const [productos, setProductos] = useState([]);
   const [errores, setErrores] = useState(null);
@@ -12,7 +15,7 @@ const ItemList = ({producto}) => {
   useEffect (() => {
     const catalogo = 'http://localhost:3001/catalogo';
     setCargando(true);
-    const getCamaras = async() =>{
+    const getCatalogo= async() =>{
       try{
         const response = await fetch(catalogo)
         const data = await response.json();
@@ -23,25 +26,22 @@ const ItemList = ({producto}) => {
         setCargando(false);
         }    
     }
-    getCamaras();
+    getCatalogo();
     }, []);
 
     if(cargando){
-      return
+      return <div> <p>Cargando</p></div>
     } else if(errores){
+      return <p>Error 404</p>
     } else {
-      <div>
-      <ul>
+     return <div className='item row'>
+      
         {productos.map((producto) => {
-          return <Item key={producto.id} product={producto} />;
+          return <Item key={producto.id} producto={producto} />;
         })}
-      </ul>
+      
     </div>
     };
-    
-
- 
-    
 };
 
 export default ItemList;
