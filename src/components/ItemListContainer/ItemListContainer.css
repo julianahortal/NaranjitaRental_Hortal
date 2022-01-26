@@ -1,5 +1,9 @@
-.item{
-    color:black;
-    padding: 20px;
-    border-width: 2px;
+
+.row{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }

@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ItemList from '../ItemList/ItemList'
+import './ItemListContainer.css'
 
-const ItemListContainer = ({producto}) => {
+const ItemListContainer = () => {
 
     return (
-        <div className="item">
-            <ItemList product={producto}/>
+        <div className="row">
+            <ItemList/>
         </div>
     )
 }
