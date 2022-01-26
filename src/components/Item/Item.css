@@ -1,13 +1,18 @@
 .item-card {
-    border: 2px solid black;
-    width: 300px;
+    box-shadow: .15em 2px #35353562;
+    border-radius: .15em;
+    width: 325px;
+    background-color: white;
+    
 }
+
 .img-container {
       height: 50%;
-      overflow: hidden;
+      padding-top: 1em;
+      
 }
 .img {
-        width: 100%;
+        width: 50%;
         height: auto;
         object-fit: cover;
 }

@@ -1,15 +1,15 @@
 import React from 'react';
+import './Item.css';
 
-
-const Item = ({ product }) => {
+const Item = ({ producto }) => {
   return (
-    <div className="item-card">
+    <div className="item-card ">
       <div className="img-container">
-        <img src={product.img} alt={product.titulo} />
+        <img className="img" src={producto.img} alt={producto.titulo} />
       </div>
-      <p>Nombre: {product.titulo}</p>
-      <p>Descripcion: {product.descripcion}</p>
-      <p>Precio: {product.precio}</p>
+      <h4>{producto.titulo}</h4>
+      <h6>{producto.tipo}, {producto.marca}</h6>
+      <p>Precio x jornada: ${producto.precio}</p>
     </div>
   );
 };
