@@ -8,7 +8,7 @@ function NavBar() {
     return (
         <nav className='menu'>
             <navbrand className='brand'>
-                <div style={{backgroundImage:`url(${LogoNaranjita})`}} className='logo'/>
+            <Link to='/'><div style={{backgroundImage:`url(${LogoNaranjita})`}} className='logo'/></Link>
             </navbrand>
 
             <ul className="link-pages">
