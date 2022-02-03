@@ -7,13 +7,9 @@ import { useParams, useNavigate } from 'react-router-dom';
 const ItemDetail = () => {
   const {id} = useParams();
   const [producto, setProducto] = useState({});
-  const [cantCarrito, setCantCarrito] = useState (0);
   const [cargando, setCargando] = useState(false);
   const [errores, setErrores] = useState(null);
   const goTo = useNavigate();
-  const addCarrito = () =>{
-    setCantCarrito 
-  }
 
   useEffect(() => {
       const catalogo = `http://localhost:3001/catalogo/${id}`;
