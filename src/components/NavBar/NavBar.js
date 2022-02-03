@@ -15,9 +15,10 @@ function NavBar() {
                 <li><Link to='/'>INICIO</Link></li>
                 <li><Link to='/alquiler-de-equipos'>ALQUILER DE EQUIPOS</Link></li>
                 <li><Link to='/nosotros'>NOSOTROS</Link></li>
-                <li><Link to='/requisitos'>REQUISITOS</Link></li>                
+                <li><Link to='/requisitos'>REQUISITOS</Link></li>
+                          
             </ul>
-            <CartWidget />
+            <Link to='/carrito'><CartWidget /></Link>
         </nav>
     );
 }
