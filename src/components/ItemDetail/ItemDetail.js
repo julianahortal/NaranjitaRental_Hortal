@@ -2,6 +2,7 @@ import React from 'react';
 import ItemCount from '../ItemCount/ItemCount'
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import './ItemDetail.css';
 
 
 const ItemDetail = () => {
@@ -35,12 +36,21 @@ const ItemDetail = () => {
       }
     return (
         <div>
-          <img src={producto.img} alt={producto.titulo} />
-          <h1>{producto.titulo}</h1>
-          <p>{producto.descripcion}</p>
-          <p>Precio por jornada: ${producto.precio}</p>
-          <ItemCount stock= {producto.stock}/>
-          <button onClick = { () => goTo(`/carrito`)}>Ver carrito</button>
+           <div className="details">
+              <div className="big-img">
+              <img src={producto.img} alt={producto.titulo}/>
+              </div>
+
+              <div className="box">
+                <div className="row">
+                  <h1>{producto.titulo}</h1>
+                </div>
+                <p>{producto.descripcion}</p>
+                <ItemCount stock= {producto.stock}/>
+                <button onClick = { () => goTo(`/carrito`)}>Ver carrito</button>
+                </div>
+                </div>
+         
         </div>
       );
 };
