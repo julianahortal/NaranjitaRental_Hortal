@@ -5,6 +5,9 @@
     background-color: white;
     
 }
+.item-card :hover {
+    cursor: pointer;
+}
 
 .img-container {
       height: 50%;
