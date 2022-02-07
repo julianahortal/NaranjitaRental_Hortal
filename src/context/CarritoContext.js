@@ -4,6 +4,7 @@ import { createContext, useContext, useState } from 'react';
 export const CarritoContext = createContext([]);
 
 export const CarritoProvider = ({children}) => { 
+ 
   const [carrito, setCarrito] = useState([]);
   
   const agregarItem = (item, cantidad) => {
@@ -16,7 +17,7 @@ export const CarritoProvider = ({children}) => {
     setCarrito((prevState) => [...prevState, newItem]);
   };
   const borrarCarrito = () => {
-    setCarrito(useState(0));
+    setCarrito([...carrito, 0])
   };
     return <CarritoContext.Provider value={{ carrito, agregarItem, borrarItem, borrarCarrito }}>{children}</CarritoContext.Provider>
 }
