@@ -11,7 +11,7 @@ const DetallesDelProducto = () => {
   const [producto, setProducto] = useState({});
   const [cargando, setCargando] = useState(false);
   const [errores, setErrores] = useState(null);
-  const goTo = useNavigate();
+
 
   useEffect(() => {
       const catalogo = `http://localhost:3001/catalogo/${id}`;
