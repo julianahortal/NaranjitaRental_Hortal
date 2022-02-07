@@ -1,11 +1,12 @@
-import {useEffect, useState} from 'react';
-import Item from "../Item/Item";
-import './ItemList.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './ItemList.css'
+import { useEffect, useState } from 'react';
 
-
+import { Spinner } from 'reactstrap';
+import Item  from '../Item/Item'
 
 const ItemList = () => {
-
   const [productos, setProductos] = useState([]);
   const [errores, setErrores] = useState(null);
   const [cargando, setCargando] = useState(false);
@@ -30,7 +31,9 @@ const ItemList = () => {
     }, []);
 
     if(cargando){
-      return <div> <p>Cargando</p></div>
+      return <div> <Spinner>
+      Loading...
+    </Spinner></div>
     } else if(errores){
       return <p>Error 404</p>
     } else {

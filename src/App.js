@@ -1,17 +1,20 @@
 import './App.css';
 
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Inicio from './pags/Inicio';
+import Inicio from './pags/Inicio/Inicio';
 import Nosotros from './pags/Nosotros';
-import AlquilerDeEquipos from './pags/AlquilerDeEquipos';
+import AlquilerDeEquipos from './pags/AlquilerDeEquipos/AlquilerDeEquipos';
 import Requisitos from './pags/Requisitos'
 import NavBar from './components/NavBar/NavBar';
-import DetallesDelProducto from './pags/DetallesDelProducto';
+import Footer from './components/Footer/Footer';
+import DetallesDelProducto from './pags/DetallesDelProducto/DetallesDelProducto';
+import Carrito from './pags/Carrito/Carrito';
+import { CarritoProvider } from './context/CarritoContext';
 
 function App() {
 
   return ( <div className="App">
+    <CarritoProvider>
     <BrowserRouter>
     <NavBar/>
       <Routes>
@@ -23,10 +26,12 @@ function App() {
               <Route path=":id" element={<DetallesDelProducto/>}/>
             </Route>
             <Route path="requisitos" element={<Requisitos/>}/>
+            <Route path="carrito" element ={<Carrito/>}/>
         </Route>
       </Routes>
-
+    <Footer/>
     </BrowserRouter>
+    </CarritoProvider>
     </div>
   );
 }

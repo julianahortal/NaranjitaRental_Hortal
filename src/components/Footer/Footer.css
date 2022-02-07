@@ -1,0 +1,86 @@
+.footer-menu{
+    display: block;
+    justify-content: center;
+    align-items:center;
+    background-color: #F28705;
+    color:#F2F2F2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    
+}
+.footer-menu .brand h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.link-pages{
+    display:flex;
+    list-style: none;
+    flex-direction: row;
+   
+}
+
+.link-pages li{
+    padding: 20px; 
+    
+}
+
+.logo{
+ width: 8rem;
+ height: 8rem;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
+}
+.footer-copyright{
+    color: #f1f1f1;
+}
+.footer-copyright a{
+    color: #ffffff;
+}
+.footer-copyright a:hover{
+    color: #f1f1f1;
+}
+.footer-copyright{
+    border-top-width:1px;
+    border-top-style:solid;
+    border-top-color:#454d5e;
+}
+.footer-main,
+.site-footer .caption{
+    color: #f1f1f1;			
+}		
+.site-footer .widget-title{
+    color: #ffffff;
+}
+.footer-main a,
+.footer-main label,
+.footer-main thead th{
+    color: #ffffff;
+}
+.footer-main a:hover{
+    color: #f1f1f1;
+}
+.site-footer text,
+.site-footer select, 
+.site-footer textarea,
+.site-footer number{
+    color:#555555;
+    background-color:#ffffff;
+}		
+.site-footer .mc4wp-form-fields p:first-child::before{
+    color: #555555;
+}
+.site-footer ::-webkit-input-placeholder {
+   color:#555555;
+}
+.site-footer :-moz-placeholder { /* Firefox 18- */
+  color:#555555;
+}
+.site-footer ::-moz-placeholder {  /* Firefox 19+ */
+   color:#555555;
+}
+.site-footer :-ms-input-placeholder {
+   color:#555555;
+}

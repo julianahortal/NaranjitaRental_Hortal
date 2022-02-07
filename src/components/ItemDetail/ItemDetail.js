@@ -1,39 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ItemCount from '../ItemCount/ItemCount'
-import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
 import './ItemDetail.css';
+import { useNavigate} from 'react-router-dom';
+import { useCarrito } from '../../context/CarritoContext';
 
 
-const ItemDetail = () => {
-  const {id} = useParams();
-  const [producto, setProducto] = useState({});
-  const [cargando, setCargando] = useState(false);
-  const [errores, setErrores] = useState(null);
+const ItemDetail = ({producto}) => {
   const goTo = useNavigate();
+  const {agregarItem} = useCarrito();
+  const [counter, setCounter] = useState(0);
 
-  useEffect(() => {
-      const catalogo = `http://localhost:3001/catalogo/${id}`;
-      setCargando(true);
-      const getCatalogo= async() =>{
-        try{
-          const response = await fetch(catalogo)
-          const data = await response.json();
-          setProducto(data);
-          }catch(error){
-            setErrores(error);
-          }finally{
-          setCargando(false);
-          }  
-      } 
-      getCatalogo();  
-      }, [id]);
+  const handleAgregarItem = () => {
+    if (counter !== 0){
+      agregarItem(producto, counter)
+    }
+    
+  
+ }
 
-  if (cargando){
-      return <p>Cargando...</p>;}
-      else if (errores){
-        return <p>Error</p>;
-      }
     return (
         <div>
            <div className="details">
@@ -46,7 +30,8 @@ const ItemDetail = () => {
                   <h1>{producto.titulo}</h1>
                 </div>
                 <p>{producto.descripcion}</p>
-                <ItemCount stock= {producto.stock}/>
+                <ItemCount stock= {producto.stock} counter={counter} setCounter={setCounter}/>                
+                <button onClick = {handleAgregarItem}>Agregar al carrito</button>
                 <button onClick = { () => goTo(`/carrito`)}>Ver carrito</button>
                 </div>
                 </div>

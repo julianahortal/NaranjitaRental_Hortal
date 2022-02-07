@@ -1,15 +1,15 @@
 import React from 'react';
 
 
-const ItemCount = ({stock}) => {
-    const [counter, setCounter] = React.useState(1);
+const ItemCount = ({stock, counter, setCounter}) => {
+    
     
     const clickSum = () => {
         counter<stock ?  setCounter(counter+1) :  setCounter(counter)
     }
 
     let clickRest= () => {
-        counter<1 ? setCounter(counter): setCounter(counter-1)
+        counter< 1 ? setCounter(counter): setCounter(counter-1)
     } 
 
   return <div>
