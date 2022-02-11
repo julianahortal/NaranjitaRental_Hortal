@@ -22,8 +22,9 @@ function App() {
             <Route index element={<Inicio/>}/>
             <Route path="nosotros" element={<Nosotros/>}/>
             <Route path="alquiler-de-equipos">
-              <Route index element={<AlquilerDeEquipos/>}/>
-              <Route path=":id" element={<DetallesDelProducto/>}/>
+              <Route index element={<AlquilerDeEquipos/>}/>  
+                <Route path=":id" element={<DetallesDelProducto/>}/>
+                <Route path="categoria/:idCategoria" element={<AlquilerDeEquipos/>}/>              
             </Route>
             <Route path="requisitos" element={<Requisitos/>}/>
             <Route path="carrito" element ={<Carrito/>}/>
