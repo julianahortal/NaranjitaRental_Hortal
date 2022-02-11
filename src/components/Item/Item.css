@@ -14,8 +14,10 @@
       padding-top: 1em;
       
 }
-.img {
-        width: 50%;
-        height: auto;
-        object-fit: cover;
+
+
+.item-card .img-fluid{
+    display: block;
+    margin: 0 auto 10px;
+    max-height: 200px;
 }

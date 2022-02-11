@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     return (
         <nav className='menu'>
-            <navbrand className='brand'>
+            <div className='brand'>
             <Link to='/'><div style={{backgroundImage:`url(${LogoNaranjita})`}} className='logo'/></Link>
-            </navbrand>
+            </div>
 
             <ul className="link-pages">
                 <li><Link to='/'>INICIO</Link></li>

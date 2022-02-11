@@ -37,3 +37,19 @@
     margin: 15px 0;
     text-align: justify;
   }
+  .row{
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+    font-weight: 200;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
