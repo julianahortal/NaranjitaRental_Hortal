@@ -11,7 +11,7 @@ const Requisitos = () => {
           <div className='"content-area col-md-12"'>
             <article>
               <div className='heading-wrap'>
-                <h4 class="heading-title">Reglamento y Requisitos Básicos para el Alquiler </h4>
+                <h4 className="heading-title">Reglamento y Requisitos Básicos para el Alquiler </h4>
               </div>
               <div>
                     <Accordion

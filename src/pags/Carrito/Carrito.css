@@ -1,3 +1,12 @@
+.container{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
 .indItem{
     display: flex;
     justify-content: space-around;
@@ -9,4 +18,33 @@
     max-width: 15%;
     height: auto;
 
+}
+
+.img-fluid{
+    margin: 0px auto; 
+    max-height: 80px;
+}
+.prodItem {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding: 1rem;
+}
+
+.row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        margin-right: 0;
+    margin-left: 0;
+}
+.justify-content-center {
+    justify-content: center!important;
+}
+
+.p-3 {
+    padding: 1rem!important;
 }

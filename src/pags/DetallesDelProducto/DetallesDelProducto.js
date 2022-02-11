@@ -1,9 +1,9 @@
 import React from 'react';
-import ItemCount from '../../components/ItemCount/ItemCount'
 import ItemDetail from '../../components/ItemDetail/ItemDetail'
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import './DetallesDelProducto.css'
+import { getFirestore } from '../../firebase';
 
 
 const DetallesDelProducto = () => {
@@ -11,24 +11,24 @@ const DetallesDelProducto = () => {
   const [producto, setProducto] = useState({});
   const [cargando, setCargando] = useState(false);
   const [errores, setErrores] = useState(null);
-
-
-  useEffect(() => {
-      const catalogo = `http://localhost:3001/catalogo/${id}`;
+  
+  useEffect (() => {
+    const db = getFirestore().collection('productos').doc(id)
+    const getCatalogo = async() =>{
       setCargando(true);
-      const getCatalogo= async() =>{
-        try{
-          const response = await fetch(catalogo)
-          const data = await response.json();
-          setProducto(data);
-          }catch(error){
-            setErrores(error);
-          }finally{
-          setCargando(false);
-          }  
-      } 
-      getCatalogo();  
-      }, [id]);
+      try{
+        const response = await db.get()
+        if(response.empty){
+          console.log('No hay productos')
+        }
+        setProducto({...response.data(), id:response.id})
+        }catch(error){
+        setErrores(error);
+        }finally{
+        setCargando(false);
+      }  
+    }   
+      getCatalogo() , [id]});
 
   if (cargando){
       return <p>Cargando...</p>;}
