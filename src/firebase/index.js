@@ -1,17 +1,20 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore';
 
+
+
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APP_ID,
-    measurementId: process.env.REACT_APP_MEASUREMENT_ID
+  apiKey: "AIzaSyDc_mdZqdeMV6t1PkddfyhqvTycQQwk8l0",
+  authDomain: "naranjita-rental.firebaseapp.com",
+  projectId: "naranjita-rental",
+  storageBucket: "naranjita-rental.appspot.com",
+  messagingSenderId: "900303756412",
+  appId: "1:900303756412:web:38959966e9b438057e3df9",
+  measurementId: "G-SVRJGZ3HS4"
   };
 
   const app = firebase.initializeApp(firebaseConfig);
+
 
   export const getFirebase = () => app;
   export const getFirestore = () => firebase.firestore(app);
