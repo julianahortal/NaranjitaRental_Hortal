@@ -1,15 +1,19 @@
 import React from 'react'
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Badge } from '@mui/material';
 import { useCarrito } from '../../context/CarritoContext';
 
 
 
+
 const CartWidget = () => {
-    const {carrito }= useCarrito();
+    const {carrito}= useCarrito();
+
     return (
-        <div>
-            <ShoppingBagIcon/>
-        </div>
+        <Badge badgeContent={carrito.length} color="secondary">            
+            <ShoppingCartIcon />
+        </Badge>
+
     )
 }
 

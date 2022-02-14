@@ -1,26 +1,34 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './ItemList.css'
 import { useEffect, useState } from 'react';
 import { getFirestore } from '../../firebase';
-import { Spinner } from 'reactstrap';
 import Item  from '../Item/Item'
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
+
+export function CircularIndeterminate() {
+  return (
+    <Box sx={{ display: 'flex' }}>
+      <CircularProgress />
+    </Box>
+  );
+}
 
 
 const ItemList = () => {
   const [productos, setProductos] = useState([]);
   const [errores, setErrores] = useState(null);
   const [cargando, setCargando] = useState(false);
-  const {idCategoria} = useParams();
+  const {categoria} = useParams();
 
   useEffect (() => {
     const db = getFirestore();
     let productsCollection;
-    if (idCategoria) {
-      productsCollection = db.collection('productos').where('id', '==', idCategoria)
+    if (categoria){
+      productsCollection = db.collection('catalogo').where('categoria', '==', categoria)
     } else {
-      productsCollection = db.collection('productos')
+      productsCollection = db.collection('catalogo').orderBy("titulo", "asc")
     }
 
     const getCatalogo = async() =>{
@@ -30,21 +38,19 @@ const ItemList = () => {
         if(response.empty){
           console.log('No hay productos')
         }
-        setProductos(response.docs.map(doc => ({...doc.data(), id: doc.id})))
+        setProductos(response.docs.map((doc) => ({...doc.data(), id: doc.id})))
       }catch(error){
         setErrores(error);
       }finally{
       setCargando(false);
       }    
-    } 
-    getCatalogo(), [idCategoria]});
+    };
+    getCatalogo() }, [categoria]);
 
     if(cargando){
-      return <div> <Spinner>
-      Loading...
-    </Spinner></div>
+      return <div>{CircularIndeterminate()}</div>
     } else if(errores){
-      return <p>Error 404</p>
+      return <Link to='/404'></Link>
     } else {
      return <div className='item row'>
       

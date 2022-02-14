@@ -4,6 +4,7 @@
     width: 325px;
     background-color: white;
     
+    
 }
 .item-card :hover {
     cursor: pointer;
@@ -21,3 +22,21 @@
     margin: 0 auto 10px;
     max-height: 200px;
 }
+h4 {
+    text-align: center;
+}
+
+.row-text{
+    display: flex;
+    justify-content: center;
+    margin:3%;
+    
+    
+}
+
+.space-around{
+    padding: 2%;
+    
+    
+}
+

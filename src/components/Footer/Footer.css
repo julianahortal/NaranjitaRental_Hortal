@@ -84,3 +84,36 @@
 .site-footer :-ms-input-placeholder {
    color:#555555;
 }
+
+.fotoMarcas {
+    display: block;
+    padding-top: -10%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.block-footer{
+    padding: 1%;
+}
+
+.block-pad{
+ 
+    box-sizing: border-box;
+    padding: 35px 180px;
+    padding-left: 36px;
+    padding-right: 36px;
+    max-width: 1670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-social{
+   
+    position: relative;
+    height: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    clear: both;
+}
