@@ -24,14 +24,7 @@
     margin: 0px auto; 
     max-height: 80px;
 }
-.prodItem {
-    box-sizing: border-box;
-    position: relative;
-    width: 100%;
-    flex: 0 0 75%;
-    max-width: 75%;
-    padding: 1rem;
-}
+
 
 .row {
         display: flex;
@@ -39,12 +32,29 @@
         margin-right: -15px;
         margin-left: -15px;
         margin-right: 0;
-    margin-left: 0;
+        margin-left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1rem;
+        
 }
 .justify-content-center {
     justify-content: center!important;
+    
 }
 
 .p-3 {
     padding: 1rem!important;
+}
+
+.volverInicio{
+    text-align: center;
+}
+
+.volverInicio:hover{
+    cursor: pointer;
+}
+
+.main-carrito{
+    background-color: white;
 }

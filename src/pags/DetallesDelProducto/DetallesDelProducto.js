@@ -7,36 +7,37 @@ import { getFirestore } from '../../firebase';
 
 
 const DetallesDelProducto = () => {
-  const {id} = useParams();
+  
   const [producto, setProducto] = useState({});
   const [cargando, setCargando] = useState(false);
   const [errores, setErrores] = useState(null);
+  const {id} = useParams();
   
   useEffect (() => {
-    const db = getFirestore().collection('productos').doc(id)
+    const db = getFirestore().collection('productos').doc(id);
     const getCatalogo = async() =>{
       setCargando(true);
       try{
         const response = await db.get()
         if(response.empty){
-          console.log('No hay productos')
+          console.log('No hay productos');
         }
-        setProducto({...response.data(), id:response.id})
-        }catch(error){
-        setErrores(error);
+        setProducto({...response.data(), id:response.id});
+        }catch(errores){
+        setErrores(console.log("Error", errores));
         }finally{
         setCargando(false);
       }  
-    }   
-      getCatalogo() , [id]});
+    }
+    getCatalogo()}, [id]);
 
   if (cargando){
-      return <p>Cargando...</p>;}
+      return <p>Cargando...</p>}
       else if (errores){
-        return <p>Error</p>;
+        return <p>Error</p>
       }
     return (
-        <ItemDetail producto={producto}/>
+        <ItemDetail key={producto} producto={producto}/>
       );
 };
 
