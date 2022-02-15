@@ -24,7 +24,7 @@ function App() {
             <Route path="nosotros" element={<Nosotros/>}/>
             <Route path="alquiler-de-equipos">
               <Route index element={<AlquilerDeEquipos/>}/>  
-                <Route path=":id" element={<DetallesDelProducto/>}/>
+                <Route path=":idProducto" element={<DetallesDelProducto/>}/>
                 <Route path="categoria/:categoria" element={<AlquilerDeEquipos/>}/>              
             </Route>
             <Route path="requisitos" element={<Requisitos/>}/>
