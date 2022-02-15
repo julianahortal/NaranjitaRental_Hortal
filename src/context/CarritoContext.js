@@ -1,15 +1,15 @@
 
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
 export const CarritoContext = createContext([]);
 
 export const CarritoProvider = ({children}) => { 
  
   const [carrito, setCarrito] = useState([]);
- 
+  
   const agregarItem = (item, cantidad) => {
     
-    const itemEnCarrito = carrito.find((compra)=>{compra.item.id === item.id});
+    const itemEnCarrito = carrito.find((compra)=> compra.item.id === item.id);
 
     if (itemEnCarrito){
       const actualizarCarrito=  carrito.map((compra)=>{
