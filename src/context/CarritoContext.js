@@ -6,11 +6,24 @@ export const CarritoContext = createContext([]);
 export const CarritoProvider = ({children}) => { 
  
   const [carrito, setCarrito] = useState([]);
-  
+ 
   const agregarItem = (item, cantidad) => {
-    const newItem = { item, cantidad };
-    setCarrito((state) => [...state, newItem]);
+    
+    const itemEnCarrito = carrito.find((compra)=>{compra.item.id === item.id});
 
+    if (itemEnCarrito){
+      const actualizarCarrito=  carrito.map((compra)=>{
+        if(compra.item.id === item.id){
+          return  {...compra, cantidad: cantidad + compra.cantidad}
+          }else {
+            return compra;
+          }
+      })
+      setCarrito(actualizarCarrito)
+    }
+    else{
+      setCarrito((prev)=>[...prev, {item, cantidad}])
+    }
   };
 
   const borrarItem = (borrarId) =>
