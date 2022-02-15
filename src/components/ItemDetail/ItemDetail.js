@@ -14,11 +14,11 @@ const ItemDetail = () => {
   const [errores, setErrores] = useState(null);
   const [counter, setCounter] = useState(0);
   const {carrito, agregarItem} = useCarrito();
-  const {idProducto} = useParams();
+  const {id} = useParams();
   const goTo = useNavigate();
   
   useEffect(() => {
-    const db = getFirestore().collection('catalogo').doc(idProducto);
+    const db = getFirestore().collection('catalogo').doc(id);
     setCargando(true);
     const getCatalogo = async() =>{    
       try{
@@ -33,7 +33,7 @@ const ItemDetail = () => {
         setCargando(false);
       }  
     }
-    getCatalogo()}, [idProducto]);
+    getCatalogo()}, [id]);
    
   
   const handleAgregarItem = () => {
