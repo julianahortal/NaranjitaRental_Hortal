@@ -11,25 +11,27 @@ const DetallesDelProducto = () => {
   const [producto, setProducto] = useState({});
   const [cargando, setCargando] = useState(false);
   const [errores, setErrores] = useState(null);
-  const {id} = useParams();
+  const {idProducto} = useParams();
   
   useEffect (() => {
-    const db = getFirestore().collection('productos').doc(id);
+    const db = getFirestore()
+    const productsCollection = db.collection('catalogo').doc(idProducto);
+    
     const getCatalogo = async() =>{
       setCargando(true);
       try{
-        const response = await db.get()
-        if(response.empty){
+        const response = await productsCollection.get()
+        if(!response.exists){
           console.log('No hay productos');
         }
-        setProducto({...response.data(), id:response.id});
+        setProducto({...response.data(), id: response.id});
         }catch(errores){
-        setErrores(console.log("Error", errores));
+        setErrores(errores);
         }finally{
         setCargando(false);
       }  
     }
-    getCatalogo()}, [id]);
+    getCatalogo() }, [idProducto]);
 
   if (cargando){
       return <p>Cargando...</p>}
@@ -37,7 +39,7 @@ const DetallesDelProducto = () => {
         return <p>Error</p>
       }
     return (
-        <ItemDetail key={producto} producto={producto}/>
+        <ItemDetail producto={producto}/>
       );
 };
 
