@@ -29,7 +29,7 @@ function App() {
             </Route>
             <Route path="requisitos" element={<Requisitos/>}/>
             <Route path="carrito" element ={<Carrito/>}/>
-            <Route path="404" element={<NotFound/>} />
+            <Route path="/*" element={<NotFound/>} />
         </Route>
       </Routes>
     <Footer/>
