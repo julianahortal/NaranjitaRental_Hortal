@@ -4,6 +4,7 @@ import './NavBar.css';
 import LogoNaranjita from '../../img/naranjitaRental.png'
 import { Link } from 'react-router-dom';
 
+
 function NavBar() {
     return (
         <nav className='menu'>

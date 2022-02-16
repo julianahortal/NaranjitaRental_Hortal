@@ -8,10 +8,10 @@ import { useCarrito } from '../../context/CarritoContext';
 
 
 const CartWidget = () => {
-    const {carrito}= useCarrito();
+    const {cantidadCarrito}= useCarrito();
 
     return (
-        <Badge badgeContent={carrito.length} color="secondary">            
+        <Badge badgeContent={cantidadCarrito} color="secondary">            
             <ShoppingCartIcon />
         </Badge>
 

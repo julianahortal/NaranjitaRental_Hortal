@@ -14,26 +14,27 @@ const ItemDetail = () => {
   const [errores, setErrores] = useState(null);
   const [counter, setCounter] = useState(0);
   const {carrito, agregarItem} = useCarrito();
-  const {id} = useParams();
+  const {idProducto} = useParams();
   const goTo = useNavigate();
   
   useEffect(() => {
-    const db = getFirestore().collection('catalogo').doc(id);
+    const db = getFirestore()
+    const productsCollection = db.collection('catalogo').doc(idProducto);
     setCargando(true);
     const getCatalogo = async() =>{    
       try{
-        const response = await db.get()
+        const response = await productsCollection.get()
         if(response.empty){
           console.log('No hay productos');
         }
         setProducto({...response.data(), id:response.id});
-        }catch(errores){
-        setErrores(console.log("Error", errores));
+        }catch(err){
+        setErrores(err);
         }finally{
         setCargando(false);
       }  
     }
-    getCatalogo()}, [id]);
+    getCatalogo()}, [idProducto]);
    
   
   const handleAgregarItem = () => {
