@@ -41,7 +41,7 @@ const Carrito = () => {
                           <button onClick={agregarItem}className="btn btn-primary btn-sm mr-2 mb-1"><AddIcon></AddIcon>
                             
                             </button>
-                            <button onClick= {borrarItem} className="btn btn-danger btn-sm mb-1" ><RemoveCircleRoundedIcon></RemoveCircleRoundedIcon>
+                            <button onClick= {()=>borrarItem(compra.item.id)} className="btn btn-danger btn-sm mb-1" ><RemoveCircleRoundedIcon></RemoveCircleRoundedIcon>
                             
                           </button>
                         </div>
