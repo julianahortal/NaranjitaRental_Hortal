@@ -29,19 +29,17 @@
 .row {
         display: flex;
         flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
+
         margin-right: 0;
         margin-left: 0;
         box-sizing: border-box;
         width: 100%;
         padding: 1rem;
         
+    justify-content: center;
+        
 }
-.justify-content-center {
-    justify-content: center!important;
-    
-}
+
 
 .p-3 {
     padding: 1rem!important;
@@ -56,5 +54,24 @@
 }
 
 .main-carrito{
+    color: black;
     background-color: white;
+    padding: 1.5625rem 0.625rem;
+    border: 1px solid #e8e8e8;
+    border-radius: 0.3125rem;
+    width: 70%;
+    float: left;
+
+}
+
+.row-2 {
+    
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-right: 0;
+    margin-left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    
 }
