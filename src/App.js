@@ -1,3 +1,4 @@
+
 import './App.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -11,6 +12,8 @@ import DetallesDelProducto from './pags/DetallesDelProducto/DetallesDelProducto'
 import Carrito from './pags/Carrito/Carrito';
 import NotFound from "./pags/NotFound/NotFound";
 import { CarritoProvider } from './context/CarritoContext';
+import ConfirmarReserva from './pags/ConfirmarReserva/ConfirmarReserva';
+import ReservaHecha from './pags/ReservaHecha/ReservaHecha';
 
 function App() {
 
@@ -24,12 +27,14 @@ function App() {
             <Route path="nosotros" element={<Nosotros/>}/>
             <Route path="alquiler-de-equipos">
               <Route index element={<AlquilerDeEquipos/>}/>  
-                <Route path=":idProducto" element={<DetallesDelProducto/>}/>
+                <Route path=":idProducto" element={<DetallesDelProducto/>}/>                  
                 <Route path="categoria/:categoria" element={<AlquilerDeEquipos/>}/>              
             </Route>
             <Route path="requisitos" element={<Requisitos/>}/>
             <Route path="carrito" element ={<Carrito/>}/>
-            <Route path="/*" element={<NotFound/>} />
+            <Route path="carrito/checkout" element ={<ConfirmarReserva/>}/>
+            <Route path="confirm/:orderId" element={<ReservaHecha/>} />
+            <Route path="*" element={<NotFound/>} />
         </Route>
       </Routes>
     <Footer/>
