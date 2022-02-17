@@ -9,6 +9,7 @@ export const CarritoProvider = ({children}) => {
   const [cantidadCarrito, setCantidadCarrito] = useState(0);
 
   useEffect(() => {
+    
     const getCantidad = () => {
       let cantidad = 0;
       carrito.forEach((compra) => {
@@ -20,11 +21,10 @@ export const CarritoProvider = ({children}) => {
   }, [carrito]);
   
   const agregarItem = (item, cantidad) => {
-    
-    const itemEnCarrito = carrito.some((compra)=> compra.item.id === item.id);
+   const itemEnCarrito = carrito.find((compra)=> compra.item.id === item.id);
 
     if (itemEnCarrito){
-      let actualizarCarrito=  carrito.map((compra)=>{
+      const actualizarCarrito=  carrito.map((compra)=>{
         if(compra.item.id === item.id){
           return  {...compra, cantidad: cantidad += compra.cantidad }
           }else {
@@ -37,9 +37,10 @@ export const CarritoProvider = ({children}) => {
       setCarrito((prev)=>[...prev, {item, cantidad}])
     }
   };
-
+  
   const borrarItem = (borrarId) =>
-  setCarrito((state) => state.filter((el => el.item.id !== borrarId)));
+ {setCarrito((state) => state.filter((el => el.item.id !== borrarId)))}
+  
 
   const borrarCarrito = () => {
     setCarrito([]);
