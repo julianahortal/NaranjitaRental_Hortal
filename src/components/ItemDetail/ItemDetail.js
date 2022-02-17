@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { getFirestore } from '../../firebase';
 
 
+
 const ItemDetail = () => {
   
   const [producto, setProducto] = useState({});
@@ -25,7 +26,8 @@ const ItemDetail = () => {
       try{
         const response = await productsCollection.get()
         if(response.empty){
-          console.log('No hay productos');
+          
+
         }
         setProducto({...response.data(), id:response.id});
         }catch(err){
