@@ -26,7 +26,7 @@ const Requisitos = () => {
 		</div>
 	</div>
 </div>
-<container className='main-content'>
+<div className='main-content'>
       <div className='container'>
         <div className='row'>
           <div className='"content-area col-md-12"'>
@@ -84,7 +84,7 @@ const Requisitos = () => {
           </div>
         </div>
       </div>
-    </container>
+    </div>
     
     <div>
 
