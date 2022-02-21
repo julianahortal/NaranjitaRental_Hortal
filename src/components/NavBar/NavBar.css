@@ -9,10 +9,7 @@
     top: 0px;
     
 }
-.menu .brand h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-}
+
 
 .link-pages{
     display:flex;
@@ -21,9 +18,19 @@
    
 }
 
-.link-pages li{
-    padding: 20px; 
-    
+a{ text-decoration: none;
+    color: #40923d;}
+a:hover{
+    color:#F28705;
+}
+
+li{
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.3em;
+   
+
 }
 
 .logo{
@@ -33,3 +40,31 @@
  background-position: center;
  background-size: contain;
 }
+
+[data-reach-menu-button] {
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1em;
+    color: #40923d;
+    box-shadow: 0;
+    border: none;
+    
+}
+button :hover {
+    color:#F28705;
+}
+[data-reach-menu-item] {
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.4em;
+    color: #40923d;
+    box-shadow: 0;
+    border: none;
+    
+  }
+  [data-reach-menu-item]:hover{
+    color: #F2B705;
+    background-color:  #F2F2F2;
+  }
