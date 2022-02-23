@@ -8,11 +8,7 @@ import './AlquilerDeEquipos.css'
 const AlquilerDeEquipos = () => {
 
     return <div>
-
-
-          
-          <ItemList/>
-        
+        <ItemList/>
     </div>
     
 };
