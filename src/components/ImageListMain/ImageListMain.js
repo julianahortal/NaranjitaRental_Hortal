@@ -15,7 +15,7 @@ const ImageListMain = () => {
   return (
     <ImageList  cols={5} rowHeight={200}>
       {itemData.map((item) => (
-        <ImageListItem key={item.img} onClick = { () => goTo(`/alquiler-de-equipos/${item.categoria}`)}>
+        <ImageListItem key={item.img} onClick = { () => goTo(`/categorias/${item.categoria}`)}>
           <img className="list-hover"
             src={`${item.img}?w=310&h=310&auto=format`}
             srcSet={`${item.img}?w=310&h=310&auto=format&dpr=2 3x`}
