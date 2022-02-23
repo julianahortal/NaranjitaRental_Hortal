@@ -19,12 +19,12 @@ function NavBar() {
                 <li><Menu>
                 <MenuButton>ALQUILER DE EQUIPOS<span aria-hidden>▾</span></MenuButton>
                     <MenuList>
-                        <Link to='alquiler-de-equipos/camara'><MenuItem>CÁMARAS</MenuItem></Link>
-                        <Link to='alquiler-de-equipos/sonido'><MenuItem>SONIDO</MenuItem></Link>
-                        <Link to='alquiler-de-equipos/iluminacion'><MenuItem>ILUMINACIÓN</MenuItem></Link>
-                        <Link to='alquiler-de-equipos/estabilizadores'> <MenuItem>ESTABILIZADORES Y TRÍPODES</MenuItem></Link>
-                        <Link to='alquiler-de-equipos/accesorios'> <MenuItem>ACCESORIOS</MenuItem></Link>
-                        
+                        <Link to='categorias/camara'><MenuItem onSelect={() => {}}>CÁMARA</MenuItem></Link>
+                        <Link to='categorias/sonido'><MenuItem onSelect={() => {}}>SONIDO</MenuItem></Link>
+                        <Link to='categorias/iluminacion'><MenuItem onSelect={() => {}}>ILUMINACIÓN</MenuItem></Link>
+                        <Link to='categorias/estabilizadores'> <MenuItem onSelect={() => {}}>ESTABILIZADORES Y TRÍPODES</MenuItem></Link>
+                        <Link to='categorias/accesorios'> <MenuItem onSelect={() => {}}>ACCESORIOS</MenuItem></Link>
+                        <Link to='/alquiler-de-equipos'><MenuItem onSelect={() => {}}>TODOS LOS EQUIPOS</MenuItem></Link>
                     </MenuList>
                 </Menu></li>
                 
