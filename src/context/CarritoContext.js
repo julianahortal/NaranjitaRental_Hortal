@@ -45,6 +45,7 @@ export const CarritoProvider = ({children}) => {
   const borrarCarrito = () => {
     setCarrito([]);
   };
+  
 
     return <CarritoContext.Provider value={{ carrito, agregarItem, borrarItem, borrarCarrito, cantidadCarrito}}>{children}</CarritoContext.Provider>
 }
