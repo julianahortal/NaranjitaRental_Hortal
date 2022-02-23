@@ -2,6 +2,7 @@
 import './App.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CarritoProvider } from './context/CarritoContext';
 import Inicio from './pags/Inicio/Inicio';
 import Nosotros from './pags/Nosotros';
 import AlquilerDeEquipos from './pags/AlquilerDeEquipos/AlquilerDeEquipos';
@@ -11,9 +12,9 @@ import Footer from './components/Footer/Footer';
 import DetallesDelProducto from './pags/DetallesDelProducto/DetallesDelProducto';
 import Carrito from './pags/Carrito/Carrito';
 import NotFound from "./pags/NotFound/NotFound";
-import { CarritoProvider } from './context/CarritoContext';
 import ConfirmarReserva from './pags/ConfirmarReserva/ConfirmarReserva';
 import ReservaHecha from './pags/ReservaHecha/ReservaHecha';
+import Categorias from './components/Categorias/Categorias';
 
 function App() {
 
@@ -26,14 +27,15 @@ function App() {
             <Route index element={<Inicio/>}/>
             <Route path="nosotros" element={<Nosotros/>}/>
             <Route path="alquiler-de-equipos">
-              <Route path=":categoria" element={<AlquilerDeEquipos/>}>                                                              
+              <Route index element={<AlquilerDeEquipos/>}/>                                                              
+                <Route path=":idProducto" element={<DetallesDelProducto/>}/>                                                                            
             </Route>
-            <Route path=":idProducto" element={<DetallesDelProducto/>}/>
+            <Route path="categorias/:categoria" element={<Categorias/>}> 
             </Route>
             <Route path="requisitos" element={<Requisitos/>}/>
             <Route path="carrito">
               <Route index element ={<Carrito/>}/>
-              <Route path="carrito/checkout" element ={<ConfirmarReserva/>}/>
+                <Route path="carrito/checkout" element ={<ConfirmarReserva/>}/>
             </Route>
             <Route path="confirm/:orderId" element={<ReservaHecha/>} />      
             <Route path="/*" element={<NotFound/>} />
