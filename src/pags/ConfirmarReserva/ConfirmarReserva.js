@@ -52,27 +52,27 @@ const ConfirmarReserva = () => {
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="nombre" className="form-label">Nombre</label>
-          <input type="text" id="nombre" name="nombre" value={nombre}  onChange={(e) => setNombre(e.target.value)} className="form-control" placeholder="Juan"/>
+          <input type="text" id="nombre" name="nombre" value={nombre}  onChange={(e) => setNombre(e.target.value)} className="form-control" placeholder="Juan" required/>
         </div>
         <div className="mb-3">
           <label htmlFor="apellido" className="form-label">Apellido</label>
-          <input type="text" name="apellido" id="apellido" value={apellido}  onChange={(e) => setApellido(e.target.value)} className="form-control" placeholder="Pérez"/>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Correo electrónico</label>
-          <input type="email" name="email" className="form-control" id="mail"  value={mail}  onChange={(e) => setMail(e.target.value)} placeholder="juanperez@gmail.com"/>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="telefono"className="form-label">Teléfono</label>
-          <input type="tel" name="telefono" className="form-control" id="telefono"  value={telefono}  onChange={(e) => setTelefono(e.target.value)} maxLength="11" placeholder="+541156984582"/>
+          <input type="text" name="apellido" id="apellido" value={apellido}  onChange={(e) => setApellido(e.target.value)} className="form-control" placeholder="Pérez" required/>
         </div>
         <div className="mb-3">
           <label htmlFor="dni" className="form-label">DNI</label>
-          <input type="tel"  name="dni" id="dni" value={dni}  onChange={(e) => setDni(e.target.value)} maxLength="8" placeholder="35694157"/>
+          <input type="tel"  name="dni" id="dni" value={dni}  onChange={(e) => setDni(e.target.value)} maxLength="8" placeholder="35694157" required/>
         </div>
         <div className="mb-3">
+          <label htmlFor="email" className="form-label">Correo electrónico</label>
+          <input type="email" name="email" className="form-control" id="mail"  value={mail}  onChange={(e) => setMail(e.target.value)} placeholder="juanperez@gmail.com" required/>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="telefono"className="form-label">Teléfono</label>
+          <input type="tel" name="telefono" className="form-control" id="telefono"  value={telefono}  onChange={(e) => setTelefono(e.target.value)} maxLength="11" placeholder="+541156984582" required/>
+        </div>        
+        <div className="mb-3">
           <label htmlFor="domicilio"className="form-label" >Domicilio</label>
-          <input type="text" name="domicilio" className="form-control" id="domicilio" value={domicilio}  onChange={(e) => setDomicilio(e.target.value)} placeholder="SiempreViva 1234"/>
+          <input type="text" name="domicilio" className="form-control" id="domicilio" value={domicilio}  onChange={(e) => setDomicilio(e.target.value)} placeholder="SiempreViva 1234" required/>
         </div>
         <input type="submit" value="Finalizar compra"/>
       </form>
