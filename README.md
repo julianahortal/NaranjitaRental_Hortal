@@ -1,5 +1,6 @@
-<img src="/src/img/naranjitaRental.png" width="100" height="100">
-# :orange: NARANJITA RENTAL :orange:
+<img src="/src/img/naranjitaRental.png" width="400" height=auto>
+
+## :orange: NARANJITA RENTAL :orange:
 
 _Sitio web e-Commerce para rental de equipos audiovisuales. Proyecto final del curso REACT JS en Coderhouse._
 
