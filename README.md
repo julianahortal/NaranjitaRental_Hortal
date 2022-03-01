@@ -1,9 +1,11 @@
-![This is an image](src\img\naranjitaRental.png)
-# NARANJITA RENTAL
+![](src\img\naranjitaRental.png)
+# NARANJITA RENTAL :orange:
 
 _Sitio web e-Commerce para rental de equipos audiovisuales. Proyecto final del curso REACT JS en Coderhouse._
 
-Este proyeto fue creado con [Create React App](https://github.com/facebook/create-react-app).
+Sitio web para la cotización de reservas de equipos audiovisuales. El usuario podrá ver la oferta de equipos a alquilar, y realizar una cotización previa a la confirmación de la reserva, pudiendo confirmar la reserva que se deberá abonar en la oficina central de Naranjita Rental, presencialmente.
+
+Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
 
 ### Instalación 🔧
 
