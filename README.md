@@ -1,5 +1,5 @@
-![](src\img\naranjitaRental.png)
-# NARANJITA RENTAL :orange:
+![](/src\img\naranjitaRental.png)
+# :orange: NARANJITA RENTAL :orange:
 
 _Sitio web e-Commerce para rental de equipos audiovisuales. Proyecto final del curso REACT JS en Coderhouse._
 
@@ -27,7 +27,7 @@ El proyecto se abrirá automaticamente en el navegador, en [http://localhost:300
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+Este proyecto fue realizado con las siguientes herramientas:
 
 * [React Bootstrap](https://react-bootstrap.github.io/) - Framework principal 
 * [MaterialUI](https://mui.com/) - Librería de componentes React
