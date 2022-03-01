@@ -1,4 +1,4 @@
-<img src="/src/img/naranjitaRental.png" width="400" height=auto>
+<img src="/src/img/naranjitaRental.png" width="400" height=auto text-align="center">
 
 ## :orange: NARANJITA RENTAL :orange:
 
