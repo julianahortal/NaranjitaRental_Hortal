@@ -1,4 +1,4 @@
-![](/src\img\naranjitaRental.png)
+![Naranjita Rental](/src/img/naranjitaRental.png)
 # :orange: NARANJITA RENTAL :orange:
 
 _Sitio web e-Commerce para rental de equipos audiovisuales. Proyecto final del curso REACT JS en Coderhouse._
