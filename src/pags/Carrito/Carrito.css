@@ -29,7 +29,7 @@
 .row {
         display: flex;
         flex-wrap: wrap;
-
+        align-items:flex-start;
         margin-right: 0;
         margin-left: 0;
         box-sizing: border-box;
@@ -54,6 +54,7 @@
 }
 
 .main-carrito{
+    margin-top:1.5em;
     color: black;
     background-color: white;
     padding: 1.5625rem 0.625rem;
@@ -62,16 +63,4 @@
     width: 70%;
     float: left;
 
-}
-
-.row-2 {
-    
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-right: 0;
-    margin-left: 0;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 1rem;
-    
 }
