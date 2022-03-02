@@ -13,7 +13,7 @@ const ImageListMain = () => {
     const goTo = useNavigate();
     
   return (
-    <ImageList  cols={5} rowHeight={200}>
+    <ImageList   cols={5} rowHeight={225}>
       {itemData.map((item) => (
         <ImageListItem key={item.img} onClick = { () => goTo(`/categorias/${item.categoria}`)}>
           <img className="list-hover"
