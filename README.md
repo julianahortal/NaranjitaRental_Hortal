@@ -1,4 +1,4 @@
-## :orange: NARANJITA RENTAL :orange:
+##
 <p align="center">
   <img src="/src/img/naranjitaRental.png" width="auto" height=200 alt="Naranjita Rental">
 </p>
