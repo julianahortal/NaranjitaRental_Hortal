@@ -1,11 +1,12 @@
 
 import React, { useEffect, useState } from 'react';
 import ImageListMain from '../../components/ImageListMain/ImageListMain';
-import { getFirestore } from '../../firebase';
 import Item  from '../../components/Item/Item';
-import { Box } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 import AOS from 'aos';
+import { Box } from '@mui/material';
+import { getFirestore } from '../../firebase';
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import 'aos/dist/aos.css';
 import './Inicio.css'
 
@@ -54,13 +55,22 @@ const Home = () => {
     <div className='index-page-content'>
     <div className='main-naranjita'>
       <div className='container-naranjita'>
-        <h1>NARANJITA RENTAL</h1>
-        <h2>ALQUILER DE EQUIPOS PARA CINE Y FOTOGRAFÍA</h2>
+        
+        <Player autoplay loop src="https://assets7.lottiefiles.com/packages/lf20_weytz1ra.json" style={{ height: '400px', width: '400px' }}>
+        <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+    </Player>
       </div>
     </div>    
-    <div className='main-destacados' data-aos="zoom-out-up">
+    <div className='main-categorías'>
+      <div className='container-categorías'>
+      <h3>CATEGORÍAS</h3>
+        <ImageListMain  data-aos="zoom-in-up"/>
+      </div>
+
+    </div>    
+    <div className='main-destacados' >
       <h3>COMBOS DESTACADOS</h3>
-      <div className='item row'>
+      <div className='item row' data-aos="zoom-in-up">
         
         {productos.map((producto) => {
           return <Item key={producto.id} producto={producto} />;
@@ -68,13 +78,6 @@ const Home = () => {
       </div>
       
     </div>
-    <div className='main-categorías'data-aos="zoom-out-up">
-      <div className='container-categorías'>
-      <h3>CATEGORÍAS</h3>
-        <ImageListMain/>
-      </div>
-
-    </div>    
     <div className='main-faq'>
       <div className='container-faq'></div>
     </div>    

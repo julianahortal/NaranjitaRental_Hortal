@@ -1,9 +1,35 @@
-.index-page-content {
-   
-    box-sizing: border-box;
-    padding: 50px 180px;
-}
+
 .container-categorias{
     box-sizing: border-box;
     padding: 50px 180px;
+    
+}
+
+.container-naranjita{
+    display: flex;    
+    justify-content: center;    
+    background-color:   #F2F2F2;
+    height: 30em;
+    padding: 50px; 
+    
+   
+}
+
+.main-categorías{
+    background-color:  #F2F2F2;
+    box-sizing: border-box;
+    padding: 50px 180px;
+
+}
+
+.main-destacados{
+    background-color:  #40923d;
+    padding: 50px ;
+}
+
+h3{
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
 }
