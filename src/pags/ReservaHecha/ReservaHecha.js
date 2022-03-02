@@ -1,6 +1,8 @@
 import  React, { useState, useEffect } from "react";
 import {useNavigate, useParams } from "react-router-dom";
 import { getFirestore } from "../../firebase";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import './ReservaHecha.css';
 
 
 const ReservaHecha = () => {
@@ -24,7 +26,14 @@ const ReservaHecha = () => {
   return (
     <div>
       <h1>¡Gracias {reserva.cliente.nombre}, por reservar con Naranjita Rental!</h1>
-      <p className='volverInicio' onClick = { () => goTo(`/`)}>Volver al inicio</p>
+      <p className="confirm">Te enviaremos un correo confirmando la disponibilidad de equipos. <br/>
+        ¡Nos vemos pronto! 
+      </p>
+      <Player autoplay loop src="https://assets2.lottiefiles.com/packages/lf20_ajopekbi.json" style={{ height: '300px', width: '300px' }}>
+        <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+    </Player>
+      
+      <h4 className='volverInicio' onClick = { () => goTo(`/`)}>Volver al inicio</h4>
     </div>
   );
 };

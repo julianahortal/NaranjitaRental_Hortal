@@ -1,0 +1,14 @@
+.confirm{
+    padding:1em;
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+h4{
+    padding-bottom: 1em;
+}
+.volverInicio:hover{
+    color: #F28705;
+}
