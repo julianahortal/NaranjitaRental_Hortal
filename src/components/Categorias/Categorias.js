@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Item  from '../Item/Item'
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import './Categorias.css'
 
 
 export function CircularIndeterminate() {
@@ -31,6 +32,9 @@ const Categorias = () => {
       case "camara":
         productsCollection = db.collection('catalogo').where('categoria', '==', "camara")
         break;
+      case "lentes":
+      productsCollection = db.collection('catalogo').where('categoria', '==', "lentes")
+      break;
       case "accesorios":
         productsCollection = db.collection('catalogo').where('categoria', '==', "accesorios")
         break;
@@ -80,6 +84,8 @@ const Categorias = () => {
        <h1>ESTABILIZADORES</h1>}
        {categoria === "camara" &&
        <h1>CÁMARA</h1>}
+       {categoria === "lentes" &&
+       <h1>LENTES</h1>}
        {!categoria}
      <div className='item row'>
         {productos.map((producto) => {
