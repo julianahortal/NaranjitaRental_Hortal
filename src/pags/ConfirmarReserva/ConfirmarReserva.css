@@ -6,3 +6,33 @@
     width: 70%;
     float: left;
 }
+h2{
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+
+}
+
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    padding-bottom: .2em;
+    padding-top: .2em;
+    
+
+}
+
+input {
+    border-radius: 4px;
+    height: 2.5em;
+    border-color:#e8e8e8;
+    width: 25em;
+}
+
+label {
+    font-family: aktiv-grotesk, sans-serif;
+font-style: normal;
+font-weight: 400;
+}
