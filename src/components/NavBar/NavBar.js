@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 import {Menu, MenuList, MenuButton, MenuItem} from "@reach/menu-button";
 import "@reach/menu-button/styles.css";
 import './NavBar.css';
+import { useNavigate } from 'react-router-dom';
 
 
 function NavBar() {
+    const goTo = useNavigate();
     return (
         <nav className='menu'>
             <div className='brand'>
@@ -16,15 +18,16 @@ function NavBar() {
             <ul className="link-pages">
                 <li><Link to='/'>INICIO</Link></li>
                 
-                <li><Menu>
+                <li><Menu >
                 <MenuButton>ALQUILER DE EQUIPOS<span aria-hidden>▾</span></MenuButton>
-                    <MenuList>
-                        <Link to='categorias/camara'><MenuItem onSelect={() => {}}>CÁMARA</MenuItem></Link>
-                        <Link to='categorias/sonido'><MenuItem onSelect={() => {}}>SONIDO</MenuItem></Link>
-                        <Link to='categorias/iluminacion'><MenuItem onSelect={() => {}}>ILUMINACIÓN</MenuItem></Link>
-                        <Link to='categorias/estabilizadores'> <MenuItem onSelect={() => {}}>ESTABILIZADORES Y TRÍPODES</MenuItem></Link>
-                        <Link to='categorias/accesorios'> <MenuItem onSelect={() => {}}>ACCESORIOS</MenuItem></Link>
-                        <Link to='/alquiler-de-equipos'><MenuItem onSelect={() => {}}>TODOS LOS EQUIPOS</MenuItem></Link>
+                    <MenuList >
+                        <MenuItem onSelect={() => {goTo('categorias/camara')}}>CÁMARA</MenuItem>
+                        <MenuItem onSelect={() => {goTo('categorias/lentes')}}>LENTES</MenuItem>
+                        <MenuItem onSelect={() => {goTo('categorias/sonido')}}>SONIDO</MenuItem>
+                        <MenuItem onSelect={() => {goTo('categorias/iluminacion')}}>ILUMINACIÓN</MenuItem>
+                        <MenuItem onSelect={() => {goTo('categorias/estabilizadores')}}>ESTABILIZADORES Y TRÍPODES </MenuItem>
+                        <MenuItem onSelect={() => {goTo('categorias/accesorios')}}>ACCESORIOS</MenuItem>
+                        <MenuItem onSelect={() => {goTo('alquiler-de-equipos')}}>TODOS LOS EQUIPOS</MenuItem>
                     </MenuList>
                 </Menu></li>
                 
