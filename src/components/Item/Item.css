@@ -22,8 +22,10 @@
     margin: 0 auto 10px;
     max-height: 200px;
 }
-h4 {
+.titulo-h4 {
     text-align: center;
+    font-size: 1.5em;
+   
 }
 
 .row-text{
@@ -35,7 +37,7 @@ h4 {
 }
 
 .space-around{
-    padding: 2%;
+    padding: 1%;
     
     
 }
