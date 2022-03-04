@@ -3,18 +3,9 @@ import './ItemList.css'
 import { useEffect, useState } from 'react';
 import { getFirestore } from '../../firebase';
 import Item  from '../Item/Item'
-import {useNavigate } from 'react-router-dom';
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
+import {useNavigate, Link } from 'react-router-dom';
+import PreLoader from '../PreLoader/PreLoader';
 
-
-export function CircularIndeterminate() {
-  return (
-    <Box sx={{ display: 'flex' }}>
-      <CircularProgress />
-    </Box>
-  );
-}
 
 
 const ItemList = () => {
@@ -46,14 +37,29 @@ const ItemList = () => {
     getCatalogo() }, []);
 
     if(cargando){
-      return <div>{CircularIndeterminate()}</div>
+      return <PreLoader/>
     } else if(errores){
-      return  goTo(`/*`)
+      return  goTo(`/error`)
     } else {
-     return <div className='item row'>
+     return <div>
+     <div className="page-title text-center color-scheme-light" /*style={{backgroundImage:`url(${Nosotros})`}}*/ >			
+     <div className="container">
+       <div className="row">
+         <div className="col">
+           <div className="block-header">
+             <h1 className="title">Todos los equipos</h1>
+           </div>
+         <div className="block-breadcrumbs">
+         <Link to='/' className="kapee-breadcrumb">Inicio/</Link><span className="delimiter-sep forward-slash"></span><span className="last"><strong>Equipos</strong></span></div>				
+         </div>
+       </div>
+     </div>
+     </div>
+     <div className='item row'>
         {productos.map((producto) => {
           return <Item key={producto.id} producto={producto} />;
         })}
+      </div>
       </div>
   
     };
