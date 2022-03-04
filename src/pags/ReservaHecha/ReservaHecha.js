@@ -3,10 +3,7 @@ import {useNavigate, useParams } from "react-router-dom";
 import { getFirestore } from "../../firebase";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import './ReservaHecha.css';
-<<<<<<< HEAD
 import PreLoader from "../../components/PreLoader/PreLoader";
-=======
->>>>>>> 435ad3067f66ee5db7207d1e2cdae732912f7ed1
 
 
 const ReservaHecha = () => {
