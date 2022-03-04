@@ -82,7 +82,7 @@ const Home = () => {
     </div>    
     <div className='main-destacados' >
       <h3>COMBOS DESTACADOS</h3>
-      <div className='item row'>
+      <div className='item row' data-aos="zoom-in-up">
         
         {productos.map((producto) => {
           return <Item key={producto.id} producto={producto} />;

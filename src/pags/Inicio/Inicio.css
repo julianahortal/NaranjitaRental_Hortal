@@ -21,7 +21,19 @@
     padding: 100px ;
 
 }
-.container-categorias{
+
+.container-naranjita{
+    display: flex;    
+    justify-content: center;    
+    background-color:   #F2F2F2;
+    height: 30em;
+    padding: 50px; 
+    
+   
+}
+
+.main-categorías{
+    background-color:  #F2F2F2;
     box-sizing: border-box;
     padding: 50px 180px;
     
