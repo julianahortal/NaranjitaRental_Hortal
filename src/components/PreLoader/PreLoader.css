@@ -1,0 +1,8 @@
+.loading-screen{
+    height: 28em;
+    width:auto;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
