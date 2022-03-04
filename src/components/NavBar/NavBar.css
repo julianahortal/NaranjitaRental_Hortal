@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color: #F2F2F2;
+    background-color: #ffff;
     color:#F28705;
+    
+    position: -webkit-sticky;
+    position: sticky;
 
-    position: fixed;
-    top: 0px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
+    
     
 }
 
@@ -21,6 +22,8 @@
     color: #40923d;
     box-shadow: 0;
     border: none;
+    position: relative;
+    background-color: #ffff;
 
    
     
@@ -28,6 +31,7 @@
     
     
 }
+
 button :hover {
     color:#F28705;
 }
@@ -73,7 +77,7 @@ li{
 
 }
 
-.logo{
+.brand{
  width: 8rem;
  height: 8rem;
  background-repeat: no-repeat;

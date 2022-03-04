@@ -12,8 +12,8 @@ function NavBar() {
     const goTo = useNavigate();
     return (
         <nav className='menu'>
-            <div className='brand'>
-            <Link to='/'><div style={{backgroundImage:`url(${LogoNaranjita})`}} className='logo'/></Link>
+            <div>
+            <Link to='/'><div style={{backgroundImage:`url(${LogoNaranjita})`}} className='brand'/></Link>
             </div>
             <ul className="link-pages">
                 <li><Link to='/'>INICIO</Link></li>
@@ -31,8 +31,8 @@ function NavBar() {
                     </MenuList>
                 </Menu></li>
                 
-                <li><Link to='/nosotros'>NOSOTROS</Link></li>
-                <li><Link to='/requisitos'>REQUISITOS</Link></li>
+                <li><Link to='/nosotros'>CONTACTO</Link></li>
+                <li><Link to='/requisitos'>REQUISITOS/FAQ</Link></li>
                           
             </ul>
             <Link to='/carrito'><CartWidget /></Link>
