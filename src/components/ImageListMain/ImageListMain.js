@@ -1,30 +1,29 @@
 import React from 'react';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
 import accesorios from '../../img/categorias/cat+accesorios.png'
 import camaras from '../../img/categorias/cat+cam.png'
 import estabilizadores from '../../img/categorias/cat+est.png'
 import luces from '../../img/categorias/cat+ilum.png'
 import sonido from '../../img/categorias/cat+son.png'
+import lentes from '../../img/categorias/cat+lent.png'
 import { useNavigate} from 'react-router-dom';
 import './ImageListMain.css'
+
 
 const ImageListMain = () => {
     const goTo = useNavigate();
     
   return (
-    <ImageList   cols={5} rowHeight={225}>
+    <div className='img-list'>
       {itemData.map((item) => (
-        <ImageListItem key={item.img} onClick = { () => goTo(`/categorias/${item.categoria}`)}>
-          <img className="list-hover"
-            src={`${item.img}?w=310&h=310&auto=format`}
-            srcSet={`${item.img}?w=310&h=310&auto=format&dpr=2 3x`}
+        
+          <img key= {item.img}className="list-hover" onClick = { () => goTo(`/categorias/${item.categoria}`)}
+            src={item.img}
+            
             alt={item.title}
-            loading="lazy"
           />
-        </ImageListItem>
+        
       ))}
-    </ImageList>
+    </div>
   );
 }
 
@@ -33,6 +32,11 @@ const itemData = [
     img: camaras,
     title: 'Cámaras',
     categoria: "camara"
+  },
+  {
+    img: lentes,
+    title: 'Lentes',
+    categoria: "lentes"
   },
   {
     img: sonido,

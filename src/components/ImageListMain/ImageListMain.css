@@ -1,3 +1,17 @@
+.list-hover{
+    justify-content: space-around;
+    padding: 1em;
+    height: 10em;
+    border-radius: 20px; 
+    
+;
+}
 .list-hover:hover{
     cursor: pointer;
+}
+
+.img-list{
+    display: inline-block;
+    
+    
 }
