@@ -2,6 +2,7 @@ import  React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { getFirestore } from "../../firebase/index";
 import { useCarrito } from "../../context/CarritoContext";
+import './ConfirmarReserva.css'
 
 
 
@@ -46,9 +47,8 @@ const ConfirmarReserva = () => {
   };
 
   return (
-    <div >
        <div className="col-sm-9 p-3 main">
-      <h2>Introduzca sus datos:</h2>
+      <h2>Datos personales:</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="nombre" className="form-label">Nombre</label>
@@ -76,8 +76,6 @@ const ConfirmarReserva = () => {
         </div>
         <input type="submit" value="Finalizar compra"/>
       </form>
-    </div>
-      
     </div>
   );
 };

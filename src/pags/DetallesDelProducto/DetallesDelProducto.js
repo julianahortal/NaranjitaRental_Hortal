@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemDetail from '../../components/ItemDetail/ItemDetail'
 import { useEffect, useState } from 'react';
-import { useParams} from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import './DetallesDelProducto.css'
 import { getFirestore } from '../../firebase';
 
@@ -12,6 +12,7 @@ const DetallesDelProducto = () => {
   const [cargando, setCargando] = useState(false);
   const [errores, setErrores] = useState(null);
   const {idProducto} = useParams();
+  const goTo = useNavigate() ;
   
   useEffect (() => {
     const db = getFirestore()
@@ -22,7 +23,7 @@ const DetallesDelProducto = () => {
       try{
         const response = await productsCollection.get()
         if(!response.exists){
-          console.log('No hay productos');
+          goTo(`/error`)
         }
         setProducto({...response.data(), id: response.id});
         }catch(errores){

@@ -1,8 +1,9 @@
+##
 <p align="center">
-  <img src="/src/img/naranjitaRental.png" width="auto" height=200>
+  <img src="/src/img/naranjitaRental.png" width="auto" height=200 alt="Naranjita Rental">
 </p>
 
-## :orange: NARANJITA RENTAL :orange:
+##
 
 _Sitio web e-Commerce para rental de equipos audiovisuales. Proyecto final del curso REACT JS en Coderhouse._
 
@@ -35,6 +36,7 @@ Este proyecto fue realizado con las siguientes herramientas:
 * [React Bootstrap](https://react-bootstrap.github.io/) - Framework principal 
 * [MaterialUI](https://mui.com/) - Librería de componentes React
 * [AOS - Animate On Scroll](https://michalsnik.github.io/aos/) - Librería de animación 
+* [LottiePlayer React](https://github.com/LottieFiles/lottie-react) - Reproductor para animaciones importadas desde LottieFiles
 * [Firebase](https://firebase.google.com/) - Base de datos
 
 

@@ -38,7 +38,7 @@ function App() {
                 <Route path="carrito/checkout" element ={<ConfirmarReserva/>}/>
             </Route>
             <Route path="confirm/:orderId" element={<ReservaHecha/>} />      
-            <Route path="/*" element={<NotFound/>} />
+            <Route path="error" element={<NotFound/>} />
         </Route>
       </Routes>
     <Footer/>

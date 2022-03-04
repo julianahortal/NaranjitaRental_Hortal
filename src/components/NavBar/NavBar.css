@@ -4,17 +4,57 @@
     align-items:center;
     background-color: #F2F2F2;
     color:#F28705;
-    position: -webkit-sticky;
-    position: sticky;
+
+    position: fixed;
     top: 0px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
     
 }
+
+
+[data-reach-menu-button] {
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1em;
+    color: #40923d;
+    box-shadow: 0;
+    border: none;
+
+   
+    
+    
+    
+    
+}
+button :hover {
+    color:#F28705;
+}
+[data-reach-menu-item] {
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.4em;
+    color: #40923d;
+    box-shadow: 0;
+    border: none;
+    
+    
+    
+  }
+  [data-reach-menu-item]:hover{
+    color: #F2B705;
+    background-color:  #F2F2F2;
+  }
+
 
 
 .link-pages{
     display:flex;
     list-style: none;
     flex-direction: row;
+    
    
 }
 
@@ -41,30 +81,3 @@ li{
  background-size: contain;
 }
 
-[data-reach-menu-button] {
-    font-family: cheap-pine-sans,sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 1em;
-    color: #40923d;
-    box-shadow: 0;
-    border: none;
-    
-}
-button :hover {
-    color:#F28705;
-}
-[data-reach-menu-item] {
-    font-family: cheap-pine-sans,sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 1.4em;
-    color: #40923d;
-    box-shadow: 0;
-    border: none;
-    
-  }
-  [data-reach-menu-item]:hover{
-    color: #F2B705;
-    background-color:  #F2F2F2;
-  }

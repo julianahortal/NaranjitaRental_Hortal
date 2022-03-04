@@ -2,8 +2,7 @@
     display: block;
     justify-content: center;
     align-items:center;
-    background-color: #F28705;
-    color:#F2F2F2;
+background-color: #F2F2F2;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
@@ -44,7 +43,7 @@
     padding-top: -10%;
     width: 100%;
     height: auto;
-    position: absolute;
+
 }
 .block-footer{
     padding: 1%;

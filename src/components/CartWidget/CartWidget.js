@@ -11,7 +11,7 @@ const CartWidget = () => {
     const {cantidadCarrito}= useCarrito();
 
     return (
-        <Badge badgeContent={cantidadCarrito} color="secondary">            
+        <Badge badgeContent={cantidadCarrito} color='success'>            
             <ShoppingCartIcon />
         </Badge>
 
