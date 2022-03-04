@@ -7,13 +7,9 @@
     }
 
 
-.indItem{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 30px 0;
+.main-content h1{
+    color: black;
 }
-
 .img-item{
     max-width: 15%;
     height: auto;
