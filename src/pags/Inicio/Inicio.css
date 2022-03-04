@@ -1,32 +1,60 @@
 
-.container-categorias{
-    box-sizing: border-box;
-    padding: 50px 180px;
-    
-}
 
+
+.main-naranjita{
+    height: 32em;
+    background-image: url('../../img/film-crew-5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
 .container-naranjita{
-    display: flex;    
-    justify-content: center;    
-    background-color:   #F2F2F2;
-    height: 30em;
-    padding: 50px; 
-    
+    display: block;    
+    justify-content: center;
+    padding: 1em;
    
 }
 
 .main-categorías{
     background-color:  #F2F2F2;
     box-sizing: border-box;
-    padding: 50px 180px;
+    padding: 100px ;
 
+}
+.container-categorias{
+    box-sizing: border-box;
+    padding: 50px 180px;
+    
+}
+.main-faq{
+    height: 32em;
+    background-image: url('../../img/film-crew-6.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.container-faq{
+    box-sizing: border-box;
+    padding: 180px;
+}
+
+.btn-faq{
+    box-sizing: border-box;
+    padding: 50px 180px;
+    border: 10em;
+    border-color: aqua;
 }
 
 .main-destacados{
-    background-color:  #40923d;
-    padding: 50px ;
+    background-color:  #F2F2F2;
+    box-sizing: border-box;
+    padding: 1em ;
 }
 
+.scroll-down-btn{
+    color: #F2F2F2;
+}
 h3{
     font-family: cheap-pine-sans,sans-serif;
     font-weight: 400;
