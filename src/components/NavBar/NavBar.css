@@ -4,20 +4,12 @@
     align-items:center;
     background-color: #ffff;
     color:#F28705;
-<<<<<<< HEAD
     
     position: -webkit-sticky;
     position: sticky;
 
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     
-=======
-
-    position: fixed;
-    top: 0px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
->>>>>>> 435ad3067f66ee5db7207d1e2cdae732912f7ed1
     
 }
 
@@ -30,11 +22,8 @@
     color: #40923d;
     box-shadow: 0;
     border: none;
-<<<<<<< HEAD
     position: relative;
     background-color: #ffff;
-=======
->>>>>>> 435ad3067f66ee5db7207d1e2cdae732912f7ed1
 
    
     
@@ -42,10 +31,6 @@
     
     
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 435ad3067f66ee5db7207d1e2cdae732912f7ed1
 button :hover {
     color:#F28705;
 }
