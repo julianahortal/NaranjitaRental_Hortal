@@ -1,4 +1,5 @@
 import React from 'react';
+import './ItemCount.css'
 
 
 const ItemCount = ({stock, counter, setCounter}) => {
@@ -13,9 +14,9 @@ const ItemCount = ({stock, counter, setCounter}) => {
     } 
 
   return <div>
-            <button id="btnRest" onClick={clickRest}>-</button>
-            <span>{counter}</span>
-            <button id="btnSum" onClick={clickSum}>+</button>
+            <button className='btn-count' id="btnRest" onClick={clickRest}>-</button>
+            <span className='input'>{counter}</span>
+            <button  className='btn-count' id="btnSum" onClick={clickSum}>+</button>
         </div>;
 };
 

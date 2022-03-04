@@ -1,0 +1,16 @@
+.btn-count{
+    margin: 1em;
+    padding: 1em;
+    border-radius: .3em;
+    border-color:  #F28705;
+    background-color:  #F28705;
+    box-shadow: inset;
+    font-size:medium;
+    font-family: cheap-pine-sans,sans-serif;
+  }
+
+  .input{
+      padding: .4em;
+      
+      
+  }
