@@ -1,6 +1,6 @@
 #page-title{
-    padding-top:100px; 
-    padding-bottom:100px; 
+    padding-top:50px; 
+    padding-bottom:50px; 
     background-position:center center;
 }
 
@@ -53,4 +53,11 @@
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
+}
+
+.faq{
+    margin-top: 2em;
+}
+.heading-title{
+    text-align: center;
 }
