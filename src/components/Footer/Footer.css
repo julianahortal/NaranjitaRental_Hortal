@@ -2,7 +2,7 @@
     display: block;
     justify-content: center;
     align-items:center;
-background-color: #F2F2F2;
+background-color: #ffff;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
@@ -13,14 +13,9 @@ background-color: #F2F2F2;
     font-weight: 700;
 }
 
-.link-pages{
-    display:flex;
-    list-style: none;
-    flex-direction: row;
-    font-family: cheap-pine-sans,sans-serif;
-    font-weight: 200;
-    font-style: normal;
-   
+.links-footer:hover{
+color: #F28705;
+cursor: pointer;
 }
 
 .link-pages li{
@@ -29,10 +24,11 @@ background-color: #F2F2F2;
 }
 
 .logo{
- width: 8rem;
- height: 8rem;
+ width: 10rem;
+ height: 10rem;
+ margin: 2em;
  background-repeat: no-repeat;
- background-position: center;
+ background-position: left;
  background-size: contain;
 
 
@@ -69,4 +65,8 @@ background-color: #F2F2F2;
     padding-left: 17px;
     padding-right: 17px;
     clear: both;
+}
+
+.block-inline{
+    display: flex;
 }

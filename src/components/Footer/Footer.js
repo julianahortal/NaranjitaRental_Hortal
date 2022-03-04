@@ -1,19 +1,22 @@
 import React from 'react'
 import './Footer.css';
 import LogoNaranjita from '../../img/naranjitaRental.png'
+import { useNavigate } from 'react-router-dom';
 
 
 
 function NavBar() {
+    const goTo = useNavigate();
     return (
         <nav className='footer-menu'>
         <div className='block-pad'>
                 <img className='fotoMarcas col-12 col-6 col-3' src='https://i.postimg.cc/W3C8hDvt/Logos-marcas.png' alt='naranjita-rental-logo'></img>
             <div>
                 <div className='row'>
-                    <div className='brand'>
+                    <div >
                         <div style={{backgroundImage:`url(${LogoNaranjita})`}} className='logo'/>
                     </div>
+                    <div className='block-inline'>
                     <div className='block-footer col-3'>
                         <h5>CONTACTO</h5>
                         <p>Audio & Video Equipment Rental</p>
@@ -23,18 +26,19 @@ function NavBar() {
                         <p>L a V de 9 a 19hs. S, D y F de 9 a 12hs</p>
                     </div>
                     <div className='block-footer col-3'>
-                        <h6>ALQUILERES</h6>
-                        <p>Preguntas Frecuentes</p>
+                        <h5>ALQUILERES</h5>
+                        <p className='links-footer'  onClick = { () => goTo('/requisitos')}>Preguntas Frecuentes</p>
                         
                     </div>
                     <div className=' block-footer col-3'>
                         <h5>PRODUCTOS</h5>
-                        <p>Cámara</p>
-                        <p>Sonido</p>
-                        <p>Estabilizadores</p>
-                        <p>Luces</p>
-                        <p>Griperia</p>
-                        <p>Accesorios</p>
+                        <p className='links-footer' onClick = { () => goTo('categorias/camara')}>Cámara</p>
+                        <p className='links-footer' onClick = { () => goTo('categorias/lentes')}>Lentes</p>
+                        <p className='links-footer' onClick = { () => goTo('categorias/sonido')}>Sonido</p>
+                        <p className='links-footer' onClick = { () => goTo('categorias/iluminacion')}>Iluminación</p>
+                        <p className='links-footer' onClick = { () => goTo('categorias/estabilizadores')}>Estabilizadores y trípodes </p>                        
+                        <p className='links-footer' onClick = { () => goTo('categorias/accesorios')}>Accesorios</p>
+                        
                     </div>
                     <div className='block-footer col-3'>
                         <h5>SEGUINOS</h5>
@@ -42,6 +46,7 @@ function NavBar() {
 
                         </div>
                         
+                    </div>
                     </div>
                 </div>
             </div>
