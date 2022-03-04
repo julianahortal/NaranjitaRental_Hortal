@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './DetallesDelProducto.css'
 import { getFirestore } from '../../firebase';
+import PreLoader from '../../components/PreLoader/PreLoader'
 
 
 const DetallesDelProducto = () => {
@@ -35,7 +36,7 @@ const DetallesDelProducto = () => {
     getCatalogo() }, [idProducto]);
 
   if (cargando){
-      return <p>Cargando...</p>}
+      return <PreLoader/>}
       else if (errores){
         return <p>Error</p>
       }
