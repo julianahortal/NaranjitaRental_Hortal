@@ -29,12 +29,19 @@ const ItemDetail = ({producto}) => {
                 <div className="row">
                   <h1>{producto.titulo}</h1>
                 </div>
+                <div>
+                <h5>Descripción:</h5>
                 <p>{producto.descripcion}</p>
-                <ItemCount stock= {producto.stock} counter={counter} setCounter={setCounter}/>                
-                <button onClick = {handleAgregarItem}>Agregar al carrito</button>
+                </div>
+                
+                <ItemCount stock= {producto.stock} counter={counter} setCounter={setCounter}/>
+                <div className='btn-block'> 
+                <button className='btn'  onClick = {handleAgregarItem}>Agregar al carrito</button>
                 { carrito.length !== 0 && 
-                <button onClick = { () => goTo(`/carrito`)}>Ver carrito</button>
-                }               
+                <button className='btn2' onClick = { () => goTo(`/carrito`)}>Ver carrito</button>
+                }           
+                </div>                
+                    
                 </div>
                 </div>
          
