@@ -1,19 +1,10 @@
 import { React, useEffect, useState } from 'react';
 import { getFirestore } from '../../firebase';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import Item  from '../Item/Item'
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
 import './Categorias.css'
+import PreLoader from '../PreLoader/PreLoader';
 
-
-export function CircularIndeterminate() {
-  return (
-    <Box sx={{ display: 'flex' }}>
-      <CircularProgress />
-    </Box>
-  );
-}
 
 
 const Categorias = () => {
@@ -22,15 +13,17 @@ const Categorias = () => {
   const [cargando, setCargando] = useState(false);
   const {categoria} = useParams();
   const goTo = useNavigate();
-
+  let foto;
 
   useEffect (() => {
     const db = getFirestore();
     let productsCollection;
     
+
+    
     switch(categoria) {
       case "camara":
-        productsCollection = db.collection('catalogo').where('categoria', '==', "camara")
+        productsCollection = db.collection('catalogo').where('categoria', '==', "camara")             
         break;
       case "lentes":
       productsCollection = db.collection('catalogo').where('categoria', '==', "lentes")
@@ -47,13 +40,13 @@ const Categorias = () => {
       case "estabilizadores":
         productsCollection = db.collection('catalogo').where('categoria', '==', "estabilizadores")
         break;
-      
       default:
         productsCollection = db.collection('catalogo')
     }
 
     const getCatalogo = async() =>{
       setCargando(true);
+      
       try{
         const response = await productsCollection.get()
         if(response.empty){
@@ -69,24 +62,26 @@ const Categorias = () => {
     getCatalogo() }, [categoria]);
 
     if(cargando){
-      return <div>{CircularIndeterminate()}</div>
+      return <PreLoader/>
     } else if(errores){
-      return  goTo(`/*`)
+      return  goTo(`/error`)
     } else {
      return  <div>
-       {categoria === "sonido" &&
-       <h1>SONIDO</h1>}
-       {categoria === "accesorios" &&
-       <h1>ACCESORIOS</h1>}
-       {categoria === "iluminacion" &&
-       <h1>ILUMINACIÓN</h1>}
-       {categoria === "estabilizadores" &&
-       <h1>ESTABILIZADORES</h1>}
-       {categoria === "camara" &&
-       <h1>CÁMARA</h1>}
-       {categoria === "lentes" &&
-       <h1>LENTES</h1>}
-       {!categoria}
+
+        <div className="page-title text-center color-scheme-light" >			
+            <div className="container">
+              <div className="row">
+                <div className="col">
+                  <div className="block-header">
+                    <h1 className="title">{categoria}</h1>
+                  </div>
+                <div className="block-breadcrumbs">
+                <Link to='/' className="kapee-breadcrumb">Inicio/</Link><span className="delimiter-sep forward-slash"></span><span className="last"><strong>{categoria}</strong></span></div>				
+                </div>
+              </div>
+            </div>
+            </div>
+    
      <div className='item row'>
         {productos.map((producto) => {
           return <Item key={producto.id} producto={producto} />;
