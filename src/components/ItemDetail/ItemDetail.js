@@ -31,7 +31,11 @@ const ItemDetail = ({producto}) => {
                 </div>
                 <div>
                 <h5>Descripción:</h5>
-                <p>{producto.descripcion}</p>
+                <p className='descripcion'>{producto.descripcion}</p>
+                </div>
+                <div>
+                <h5>Precio por jornada:</h5>
+                <p className='descripcion'><strong>${producto.precio}</strong></p>
                 </div>
                 
                 <ItemCount stock= {producto.stock} counter={counter} setCounter={setCounter}/>
