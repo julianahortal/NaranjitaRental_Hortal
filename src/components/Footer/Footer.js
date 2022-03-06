@@ -2,6 +2,9 @@ import React from 'react'
 import './Footer.css';
 import LogoNaranjita from '../../img/naranjitaRental.png'
 import { useNavigate } from 'react-router-dom';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 
 
@@ -20,7 +23,7 @@ function NavBar() {
                     <div className='block-footer col-3'>
                         <h5>CONTACTO</h5>
                         <p>Audio & Video Equipment Rental</p>
-                        <p>Av. Falsa 1234, Belgrano CABA</p>
+                        <p>3 de Febrero 2263, Belgrano CABA</p>
                         <p>+54 9 11 4466-7788</p>
                         <p>info@naranjita.com.ar</p>
                         <p>L a V de 9 a 19hs. S, D y F de 9 a 12hs</p>
@@ -43,7 +46,20 @@ function NavBar() {
                     <div className='block-footer col-3'>
                         <h5>SEGUINOS</h5>
                         <div className='block-social'>
-
+                            <div className='social-row'>
+                            <FacebookIcon/>
+                            <p>/naranjita-rental</p>
+                            </div>
+                            <div className='social-row'>
+                            <InstagramIcon/>
+                            <p>@naranjita.rental</p>
+                            </div>
+                            <div className='social-row'>
+                            <MailOutlineIcon/>
+                            <a href="mailto:naranjita@rental.com?Subject=Cotización"><p>naranjita@rental.com</p></a>
+                            </div>
+                            
+                            
                         </div>
                         
                     </div>

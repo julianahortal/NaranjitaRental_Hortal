@@ -23,6 +23,12 @@ cursor: pointer;
     
 }
 
+.block-social{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+}
+
 .logo{
  width: 10rem;
  height: 10rem;
@@ -60,13 +66,30 @@ cursor: pointer;
    
     position: relative;
     height: auto;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 17px;
+    padding-bottom: 17px;    
     padding-right: 17px;
     clear: both;
 }
 
 .block-inline{
     display: flex;
+}
+
+.social-row{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+.social-row p {
+    color: black;
+    padding-left: 5px;
+}
+
+.social-row p:hover{
+    color: #F28705;
+    cursor: pointer;
 }
