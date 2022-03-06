@@ -34,13 +34,14 @@ const Carrito = () => {
                 <p className='volverInicio' onClick = { () => goTo(`/`)}>Volver al inicio</p>
               </div>
               }
-             {carrito.length !==0 && <div className='row'>
-              <ConfirmarReserva/>
+             {carrito.length !==0 && <div className='center-row'>
+              <div className='reserva-form'><ConfirmarReserva/></div>
               
              
-            <div className="main-content col">
-            <h1>CARRITO</h1>
-            <table className='main-carrito' >
+            <div className="main-contents col">
+            <h2>CARRITO</h2>
+            <div className='main-carrito'>
+            <table  >
                 <thead>
                   <tr>
                     <th></th>
@@ -52,29 +53,32 @@ const Carrito = () => {
                   <tbody>
                     {carrito.map((compra) => (<tr key={compra.item.id}>
                       <td><img alt={compra.item.titulo} src={compra.item.img}  className="img-fluid"/></td>
-                      <td><p className="mb-1">{compra.item.titulo}</p></td>
+                      <td><p className="mb-1" style= {{display: 'flex', flexWrap: 'wrap', margin: '2em'}}>{compra.item.titulo}</p></td>
                       <td>${compra.item.precio} </td>
                       <td>{compra.cantidad}</td>
                       <td> <button onClick= {()=>borrarItem(compra.item.id)} className="btn btn-danger btn-sm mb-1" ><DeleteIcon></DeleteIcon></button></td>
                     </tr>))}
                               
                               
-                    <tr>                    
-                      <td>Items totales:</td>
-                      <td>{cantidadCarrito}</td>
-                    </tr>
-                    <tr>                    
-                      <td>Cotización total:</td>
-                      <td>${getTotal(carrito).toLocaleString() }</td>
-                    </tr>
+                   
                   </tbody>
-                  <tfoot>
-                 
-                  
-                  
-                  <tr> <div type="button" onClick= {borrarCarrito} className=" btn-outlineprimary btn-sm">BORRAR CARRITO</div></tr>
-                  </tfoot>   
+   
             </table>
+            <div>
+            <div className='details-carrito'> 
+            <hr></hr>                   
+                <p>Items totales:<strong> {cantidadCarrito}</strong></p>             
+                <p>Cotización total: <strong>${getTotal(carrito).toLocaleString()}</strong></p>
+            </div>
+            <hr></hr>   <div style={{display: 'flex',justifyContent: 'center', alignItems: 'center'}}>
+            <div type="button" onClick={borrarCarrito} className=" btn-details btn-sm">VACIAR CARRITO <DeleteIcon></DeleteIcon></div>
+            </div>
+            </div>
+            </div>
+            <div>
+            
+            </div>
+           
                </div>
             </div>
             }
