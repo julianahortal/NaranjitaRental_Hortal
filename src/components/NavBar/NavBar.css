@@ -72,8 +72,10 @@ li{
     font-weight: 200;
     font-style: normal;
     font-size: 1.3em;
-   
-
+    transition: all .1s ease-in-out;
+}
+li:hover{
+    transform: scale(1.1);
 }
 
 .brand{

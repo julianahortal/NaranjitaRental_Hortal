@@ -1,11 +1,11 @@
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget';
 import LogoNaranjita from '../../img/naranjitaRental.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {Menu, MenuList, MenuButton, MenuItem} from "@reach/menu-button";
 import "@reach/menu-button/styles.css";
 import './NavBar.css';
-import { useNavigate } from 'react-router-dom';
+
 
 
 function NavBar() {
