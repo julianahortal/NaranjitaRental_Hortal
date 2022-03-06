@@ -13,13 +13,11 @@ const Categorias = () => {
   const [cargando, setCargando] = useState(false);
   const {categoria} = useParams();
   const goTo = useNavigate();
-  let foto;
+  
 
   useEffect (() => {
     const db = getFirestore();
     let productsCollection;
-    
-
     
     switch(categoria) {
       case "camara":
