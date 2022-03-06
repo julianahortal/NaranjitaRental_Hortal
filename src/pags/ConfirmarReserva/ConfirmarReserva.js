@@ -71,7 +71,7 @@ const ConfirmarReserva = () => {
           <input type="tel" name="telefono" className="form-control" id="telefono"  value={telefono}  onChange={(e) => setTelefono(e.target.value)} maxLength="11" placeholder="+541156984582" required/>
         </div>        
         <div className="mb-3">
-          <label htmlFor="domicilio"className="form-label" >Domicilio</label>
+          <label htmlFor="domicilio"className="form-label">Domicilio</label>
           <input type="text" name="domicilio" className="form-control" id="domicilio" value={domicilio}  onChange={(e) => setDomicilio(e.target.value)} placeholder="SiempreViva 1234" required/>
         </div>
         <input type="submit" value="Finalizar compra"/>
