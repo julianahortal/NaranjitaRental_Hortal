@@ -22,9 +22,14 @@
     margin: 0 auto 10px;
     max-height: 200px;
 }
-.titulo-h4 {
+.titulo-h6 {
     text-align: center;
     font-size: 1.5em;
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: black;
    
 }
 
