@@ -1,17 +1,17 @@
 
 
 
-.main-naranjita{
-    height: 31em;
+
+.container-naranjita{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    height: 32em;
     background-image: url('../../img/film-crew-5.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-}
-.container-naranjita{
-    display: block;    
-    justify-content: center;
-    padding: 1em;
    
 }
 
@@ -35,41 +35,74 @@
 .main-categorías{
     background-color:  #F2F2F2;
     box-sizing: border-box;
-    padding: 50px 180px;
+    align-items: center ;
+    height: 30em;
+    padding: 5em;
+    height:fit-content;
     
 }
 .main-faq{
-    height: 32em;
+    
     background-image: url('../../img/film-crew-6.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    height:fit-content;
 }
 
 .container-faq{
+    
     box-sizing: border-box;
-    padding: 180px;
+    padding: 150px 50px;
+    
+    
 }
 
 .btn-faq{
-    box-sizing: border-box;
-    padding: 50px 180px;
-    border: 10em;
-    border-color: aqua;
+    margin-top: 5em ;
+    
+    padding: 25px 46px;
+    color:#fff;
+    margin-left: 25%;
+    margin-right: 30%;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #fff;
+    background-color: linear, 0.1s color linear;
+    background-color: transparent;
+    transition: 0.1s ;
+    font-family:  BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal; 
 }
-
+.btn-faq:hover{
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
 .main-destacados{
     background-color:  #F2F2F2;
     box-sizing: border-box;
     padding: 1em ;
 }
 
-.scroll-down-btn{
-    color: #F2F2F2;
-}
+
 h3{
     font-family: cheap-pine-sans,sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 3em;
+    text-shadow: .5px 1px .7px #000000ad;
+}
+
+.text-faq{
+    box-sizing: border-box;
+    color: #F2F2F2;
+    font-family: cheap-pine-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    text-shadow: .5px 3px 5px #000000;
 }
