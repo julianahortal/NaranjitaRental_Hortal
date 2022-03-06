@@ -1,0 +1,59 @@
+
+
+.map-left{
+    
+    margin-right: 25%;
+}
+
+.contact-content{
+    margin-left: 5%;
+    width: max-content;
+    
+}
+
+.contact-content h3{
+    font-size: 2em;
+    text-shadow: none;
+}
+
+.form-control-textarea{
+    
+    width: auto;
+   
+    font-family: Lato,Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+border-radius: 4px;
+    height: 8em;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-color:#e8e8e8;
+    width: 25em;
+    
+}
+
+.contacto-text{
+    padding-bottom: 2em;
+}
+
+.element-visible { display: block }
+.element-hidden { display: none }
+
+.resp-ex{
+    font-size: large;
+}
+
+
+#btn-consulta{
+    background-color:  #F28705;
+   
+    font-family: Lato,Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+    border-radius: 4px;
+    height: 2.5em;
+    border-color:#e8e8e8;
+    width: 25em;
+    color: #fff;
+}
