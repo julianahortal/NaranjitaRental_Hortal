@@ -43,10 +43,10 @@ const Requisitos = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          <strong>Para poder alquilar equipos en Naranjita Rental,</strong> en primera instancia se deben aportar <strong>datos personales y laborales,</strong> tener alguna <strong>recomendación directa</strong> o <strong>referencia laboral / comercial</strong> previa con nosotros, o de la empresa a la que pertenezcan y/o con algún <strong>cliente de nuestra confianza</strong> y/o con algún <strong>colega del rubro</strong> al que ya le hayan alquilado antes, y/o de alguna <strong>institución educativa</strong> a la que pertenezcan como estudiantes en cursada, o como docentes u otro cargo en la misma, en caso de contar con <strong>todos</strong> los elementos necesarios para superar los controles administrativos requeridos podrán ser ingresados como clientes nuevos y proseguiremos con los pasos de alquiler, de otra manera <strong>Naranjita Rental se reserva el derecho de rechazar y/o cancelar</strong> las reservas (si es que estas existieran previamente) y <strong>no avanzar</strong> con las mismas hasta no se puedan cumplir con los <strong>requisitos básicos de confiabilidad comercial.</strong><br/>
-          <div>
+          <strong>Para poder alquilar equipos en Naranjita Rental,</strong> en primera instancia se deben aportar <strong>datos personales y laborales,</strong> tener alguna <strong>recomendación directa</strong> o <strong>referencia laboral / comercial</strong> previa con nosotros, o de la empresa a la que pertenezcan y/o con algún <strong>cliente de nuestra confianza</strong> y/o con algún <strong>colega del rubro</strong> al que ya le hayan alquilado antes, y/o de alguna <strong>institución educativa</strong> a la que pertenezcan como estudiantes en cursada, o como docentes u otro cargo en la misma, en caso de contar con <strong>todos</strong> los elementos necesarios para superar los controles administrativos requeridos podrán ser ingresados como clientes nuevos y proseguiremos con los pasos de alquiler, de otra manera <strong>Naranjita Rental se reserva el derecho de rechazar y/o cancelar</strong> las reservas (si es que estas existieran previamente) y <strong>no avanzar</strong> con las mismas hasta no se puedan cumplir con los <strong>requisitos básicos de confiabilidad comercial.</strong><br/><br/>
+         
             <span>Específicamente para <strong>ESTUDIANTES</strong>, se puede alquilar con <strong>DNI</strong>, <strong>LIBRETA</strong> o <strong>CREDENCIAL</strong> que los acredite como tal y <strong>SERVICIO</strong> a su nombre o de un familiar directo.</span>
-            </div>
+           
           </Typography>
         </AccordionDetails>
       </Accordion>
