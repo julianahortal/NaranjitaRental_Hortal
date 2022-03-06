@@ -1,7 +1,7 @@
 .list-hover{
     justify-content: space-around;
-    padding: 1em;
-    height: 10em;
+    padding: .5em;
+    height: 11em;
     border-radius: 20px; 
     
 ;
@@ -14,4 +14,11 @@
     display: inline-block;
     
     
+}
+
+.img-list img{
+    transition: all .2s ease-in-out;
+}
+.img-list img:hover {
+    transform: scale(1.1);
 }
