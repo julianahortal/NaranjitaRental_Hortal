@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CarritoProvider } from './context/CarritoContext';
 import Inicio from './pags/Inicio/Inicio';
-import Nosotros from './pags/Nosotros';
+import Nosotros from './pags/Nosotros/Nosotros';
 import AlquilerDeEquipos from './pags/AlquilerDeEquipos/AlquilerDeEquipos';
 import Requisitos from './pags/Requisitos/Requisitos'
 import NavBar from './components/NavBar/NavBar';
